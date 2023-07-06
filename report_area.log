@@ -1,0 +1,1519 @@
+ 
+****************************************
+Report : area
+Design : RAE
+Version: R-2020.09
+Date   : Wed Jun 21 01:00:20 2023
+****************************************
+
+Library(s) Used:
+
+    slow_vdd1v2 (File: /theda21_2/library/GPDK045/cur/gsclib045/db/slow_vdd1v2_basicCells.db)
+
+Number of ports:                        76169
+Number of nets:                        501961
+Number of cells:                       393585
+Number of combinational cells:         383914
+Number of sequential cells:              8349
+Number of macros/black boxes:               0
+Number of buf/inv:                      43957
+Number of references:                      57
+
+Combinational area:             768689.152248
+Buf/Inv area:                    34153.146762
+Noncombinational area:           68893.165537
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                837582.317785
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-   Black-
+                                  Total        Total    national     national    boxes   Design
+--------------------------------  -----------  -------  -----------  ----------  ------  --------------------------------------------
+RAE                               837582.3178    100.0    3430.6021   2824.5781  0.0000  RAE
+c13                                67249.9752      8.0    3160.5418   4953.5281  0.0000  conv1_3
+c13/add_0_root_add_0_root_add_1843_3
+                                      71.4780      0.0      71.4780      0.0000  0.0000  conv1_3_DW01_add_24_DW01_add_821
+c13/add_0_root_add_0_root_add_1960_3
+                                      67.3740      0.0      67.3740      0.0000  0.0000  conv1_3_DW01_add_20_DW01_add_379
+c13/add_0_root_add_0_root_add_1961_4
+                                      68.4000      0.0      68.4000      0.0000  0.0000  conv1_3_DW01_add_22_DW01_add_381
+c13/add_0_root_add_1_root_add_1844_4
+                                      71.4780      0.0      71.4780      0.0000  0.0000  conv1_3_DW01_add_26_DW01_add_823
+c13/add_0_root_r788                   81.7380      0.0      81.7380      0.0000  0.0000  conv1_3_DW01_add_15_DW01_add_374
+c13/add_0_root_r791                   82.0800      0.0      82.0800      0.0000  0.0000  conv1_3_DW01_add_17_DW01_add_376
+c13/add_1420                          25.9920      0.0      25.9920      0.0000  0.0000  conv1_3_DW01_inc_1_DW01_inc_36
+c13/add_1519                          25.9920      0.0      25.9920      0.0000  0.0000  conv1_3_DW01_inc_0_DW01_inc_35
+c13/add_1687                         271.2060      0.0     271.2060      0.0000  0.0000  conv1_3_DW01_add_38
+c13/add_1687_I2                      266.4180      0.0     266.4180      0.0000  0.0000  conv1_3_DW01_add_39
+c13/add_1687_I2_I1                   281.4660      0.0     281.4660      0.0000  0.0000  conv1_3_DW01_add_40
+c13/add_1687_I2_I2                   283.5180      0.0     283.5180      0.0000  0.0000  conv1_3_DW01_add_43
+c13/add_1687_I3_I1                   281.4660      0.0     281.4660      0.0000  0.0000  conv1_3_DW01_add_41
+c13/add_1687_I3_I2                   283.5180      0.0     283.5180      0.0000  0.0000  conv1_3_DW01_add_44
+c13/add_1687_I4_I1                   285.9120      0.0     285.9120      0.0000  0.0000  conv1_3_DW01_add_42
+c13/add_1687_I4_I2                   283.8600      0.0     283.8600      0.0000  0.0000  conv1_3_DW01_add_45
+c13/add_1687_I5_I1                   282.1500      0.0     282.1500      0.0000  0.0000  conv1_3_DW01_add_46
+c13/add_1687_I5_I2                   283.8600      0.0     283.8600      0.0000  0.0000  conv1_3_DW01_add_47
+c13/add_1961_2                        27.0180      0.0      27.0180      0.0000  0.0000  conv1_3_DW01_inc_2_DW01_inc_41
+c13/add_1_root_r788                   77.6340      0.0      77.6340      0.0000  0.0000  conv1_3_DW01_add_16_DW01_add_375
+c13/add_1_root_r791                   75.5820      0.0      75.5820      0.0000  0.0000  conv1_3_DW01_add_19_DW01_add_378
+c13/inpro8_2                       12602.7003      1.5       0.0000      0.0000  0.0000  innerproduct8_2_cv13
+c13/inpro8_2/add_0_root_add_2096_2
+                                     124.1460      0.0     124.1460      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_39
+c13/inpro8_2/add_0_root_add_2097_2
+                                     127.9080      0.0     127.9080      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_41
+c13/inpro8_2/add_0_root_add_2098_2
+                                     125.5140      0.0     125.5140      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_43
+c13/inpro8_2/add_0_root_add_2099_2
+                                     121.0680      0.0     121.0680      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_51
+c13/inpro8_2/add_0_root_add_2102_2
+                                     134.4060      0.0     134.4060      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_45
+c13/inpro8_2/add_0_root_add_2103_2
+                                     134.4060      0.0     134.4060      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_47
+c13/inpro8_2/add_0_root_add_2104_2
+                                     128.9340      0.0     128.9340      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_49
+c13/inpro8_2/add_0_root_add_2105_2
+                                     119.7000      0.0     119.7000      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_53
+c13/inpro8_2/add_1_root_add_2096_2
+                                      97.8120      0.0      97.8120      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_38
+c13/inpro8_2/add_1_root_add_2097_2
+                                      97.8120      0.0      97.8120      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_40
+c13/inpro8_2/add_1_root_add_2098_2
+                                     101.5740      0.0     101.5740      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_42
+c13/inpro8_2/add_1_root_add_2099_2
+                                     106.3620      0.0     106.3620      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_50
+c13/inpro8_2/add_1_root_add_2102_2
+                                     101.2320      0.0     101.2320      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_44
+c13/inpro8_2/add_1_root_add_2103_2
+                                     101.2320      0.0     101.2320      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_46
+c13/inpro8_2/add_1_root_add_2104_2
+                                     101.2320      0.0     101.2320      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_48
+c13/inpro8_2/add_1_root_add_2105_2
+                                     107.7300      0.0     107.7300      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_52
+c13/inpro8_2/add_2095_2               86.8680      0.0      86.8680      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_36
+c13/inpro8_2/add_2101_2              107.3880      0.0     107.3880      0.0000  0.0000  innerproduct8_2_cv13_DW01_add_37
+c13/inpro8_2/mult_2095_2             371.7540      0.0     371.7540      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_56
+c13/inpro8_2/mult_2095_3             370.0440      0.0     370.0440      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_57
+c13/inpro8_2/mult_2096               382.6980      0.0     382.6980      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_61
+c13/inpro8_2/mult_2096_2             388.1700      0.0     388.1700      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_62
+c13/inpro8_2/mult_2096_3             353.6280      0.0     353.6280      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_60
+c13/inpro8_2/mult_2097               388.1700      0.0     388.1700      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_64
+c13/inpro8_2/mult_2097_2             386.4600      0.0     386.4600      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_65
+c13/inpro8_2/mult_2097_3             356.3640      0.0     356.3640      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_63
+c13/inpro8_2/mult_2098               388.1700      0.0     388.1700      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_67
+c13/inpro8_2/mult_2098_2             386.4600      0.0     386.4600      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_68
+c13/inpro8_2/mult_2098_3             365.2560      0.0     365.2560      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_66
+c13/inpro8_2/mult_2099               388.1700      0.0     388.1700      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_79
+c13/inpro8_2/mult_2099_2             396.0360      0.0     396.0360      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_80
+c13/inpro8_2/mult_2099_3             359.7840      0.0     359.7840      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_78
+c13/inpro8_2/mult_2101_2             371.7540      0.0     371.7540      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_58
+c13/inpro8_2/mult_2101_3             370.0440      0.0     370.0440      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_59
+c13/inpro8_2/mult_2102               382.6980      0.0     382.6980      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_70
+c13/inpro8_2/mult_2102_2             388.1700      0.0     388.1700      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_71
+c13/inpro8_2/mult_2102_3             357.0480      0.0     357.0480      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_69
+c13/inpro8_2/mult_2103               390.5640      0.0     390.5640      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_73
+c13/inpro8_2/mult_2103_2             388.1700      0.0     388.1700      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_74
+c13/inpro8_2/mult_2103_3             357.0480      0.0     357.0480      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_72
+c13/inpro8_2/mult_2104               390.5640      0.0     390.5640      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_76
+c13/inpro8_2/mult_2104_2             388.1700      0.0     388.1700      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_77
+c13/inpro8_2/mult_2104_3             365.5980      0.0     365.5980      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_75
+c13/inpro8_2/mult_2105               390.5640      0.0     390.5640      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_82
+c13/inpro8_2/mult_2105_2             396.0360      0.0     396.0360      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_83
+c13/inpro8_2/mult_2105_3             359.7840      0.0     359.7840      0.0000  0.0000  innerproduct8_2_cv13_DW_mult_tc_81
+c13/r778                              38.3040      0.0      38.3040      0.0000  0.0000  conv1_3_DW_mult_uns_2_DW_mult_uns_20
+c13/rq8                            43016.7610      5.1     732.2220      0.0000  0.0000  reluQuan8_4
+c13/rq8/mult_2157                   5280.4801      0.6    5280.4801      0.0000  0.0000  reluQuan8_4_DW_mult_tc_8
+c13/rq8/mult_2158                   5280.8221      0.6    5280.8221      0.0000  0.0000  reluQuan8_4_DW_mult_tc_10
+c13/rq8/mult_2159                   5292.4501      0.6    5292.4501      0.0000  0.0000  reluQuan8_4_DW_mult_tc_11
+c13/rq8/mult_2160                   5280.1381      0.6    5280.1381      0.0000  0.0000  reluQuan8_4_DW_mult_tc_12
+c13/rq8/mult_2161                   5284.9261      0.6    5284.9261      0.0000  0.0000  reluQuan8_4_DW_mult_tc_9
+c13/rq8/mult_2162                   5291.0821      0.6    5291.0821      0.0000  0.0000  reluQuan8_4_DW_mult_tc_13
+c13/rq8/mult_2163                   5283.2161      0.6    5283.2161      0.0000  0.0000  reluQuan8_4_DW_mult_tc_14
+c13/rq8/mult_2164                   5291.4241      0.6    5291.4241      0.0000  0.0000  reluQuan8_4_DW_mult_tc_15
+c15                                73967.4197      8.8    2794.4821   4847.5081  0.0000  conv1_5
+c15/add_0_root_add_0_root_add_2635_2
+                                      73.5300      0.0      73.5300      0.0000  0.0000  conv1_5_DW01_add_12_DW01_add_366
+c15/add_0_root_add_0_root_add_2743_3
+                                      66.3480      0.0      66.3480      0.0000  0.0000  conv1_5_DW01_add_16_DW01_add_370
+c15/add_0_root_add_0_root_add_2744_4
+                                      67.3740      0.0      67.3740      0.0000  0.0000  conv1_5_DW01_add_18_DW01_add_372
+c15/add_0_root_add_1_root_add_2636_3
+                                      74.2140      0.0      74.2140      0.0000  0.0000  conv1_5_DW01_add_14_DW01_add_368
+c15/add_0_root_r747                   76.6080      0.0      76.6080      0.0000  0.0000  conv1_5_DW01_add_20_DW01_add_685
+c15/add_0_root_r749                   76.6080      0.0      76.6080      0.0000  0.0000  conv1_5_DW01_add_22_DW01_add_687
+c15/add_2293                          25.9920      0.0      25.9920      0.0000  0.0000  conv1_5_DW01_inc_1_DW01_inc_34
+c15/add_2391                          25.9920      0.0      25.9920      0.0000  0.0000  conv1_5_DW01_inc_0_DW01_inc_33
+c15/add_2522                         275.6520      0.0     275.6520      0.0000  0.0000  conv1_5_DW01_add_32
+c15/add_2522_I2                      282.1500      0.0     282.1500      0.0000  0.0000  conv1_5_DW01_add_36
+c15/add_2522_I2_I1                   278.7300      0.0     278.7300      0.0000  0.0000  conv1_5_DW01_add_33
+c15/add_2522_I2_I2                   387.8280      0.0     387.8280      0.0000  0.0000  conv1_5_DW01_add_26
+c15/add_2522_I3_I1                   278.7300      0.0     278.7300      0.0000  0.0000  conv1_5_DW01_add_34
+c15/add_2522_I3_I2                   388.1700      0.0     388.1700      0.0000  0.0000  conv1_5_DW01_add_25
+c15/add_2522_I4_I1                   278.0460      0.0     278.0460      0.0000  0.0000  conv1_5_DW01_add_35
+c15/add_2522_I4_I2                   387.8280      0.0     387.8280      0.0000  0.0000  conv1_5_DW01_add_24
+c15/add_2744_2                        27.0180      0.0      27.0180      0.0000  0.0000  conv1_5_DW01_inc_2_DW01_inc_40
+c15/inpro8_2                       20241.2705      2.4       1.0260      0.0000  0.0000  innerproduct8_2
+c15/inpro8_2/add_0_root_add_2886_4
+                                     146.3760      0.0     146.3760      0.0000  0.0000  innerproduct8_2_DW01_add_63
+c15/inpro8_2/add_0_root_add_2887_4
+                                     142.2720      0.0     142.2720      0.0000  0.0000  innerproduct8_2_DW01_add_67
+c15/inpro8_2/add_0_root_add_2888_4
+                                     142.2720      0.0     142.2720      0.0000  0.0000  innerproduct8_2_DW01_add_71
+c15/inpro8_2/add_0_root_add_2889_4
+                                     146.0340      0.0     146.0340      0.0000  0.0000  innerproduct8_2_DW01_add_75
+c15/inpro8_2/add_0_root_add_2890_4
+                                     142.6140      0.0     142.6140      0.0000  0.0000  innerproduct8_2_DW01_add_78
+c15/inpro8_2/add_0_root_add_2891_4
+                                     146.7180      0.0     146.7180      0.0000  0.0000  innerproduct8_2_DW01_add_81
+c15/inpro8_2/add_0_root_add_2892_4
+                                     142.2720      0.0     142.2720      0.0000  0.0000  innerproduct8_2_DW01_add_84
+c15/inpro8_2/add_0_root_add_2893_4
+                                     142.2720      0.0     142.2720      0.0000  0.0000  innerproduct8_2_DW01_add_87
+c15/inpro8_2/add_1_root_add_2886_4
+                                     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct8_2_DW01_add_62
+c15/inpro8_2/add_1_root_add_2887_4
+                                     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct8_2_DW01_add_66
+c15/inpro8_2/add_1_root_add_2888_4
+                                     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct8_2_DW01_add_70
+c15/inpro8_2/add_1_root_add_2889_4
+                                     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct8_2_DW01_add_74
+c15/inpro8_2/add_1_root_add_2890_4
+                                     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct8_2_DW01_add_77
+c15/inpro8_2/add_1_root_add_2891_4
+                                     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct8_2_DW01_add_80
+c15/inpro8_2/add_1_root_add_2892_4
+                                     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct8_2_DW01_add_83
+c15/inpro8_2/add_1_root_add_2893_4
+                                     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct8_2_DW01_add_86
+c15/inpro8_2/add_2_root_add_2886_4
+                                     120.3840      0.0     120.3840      0.0000  0.0000  innerproduct8_2_DW01_add_60
+c15/inpro8_2/add_2_root_add_2887_4
+                                     116.9640      0.0     116.9640      0.0000  0.0000  innerproduct8_2_DW01_add_64
+c15/inpro8_2/add_2_root_add_2888_4
+                                     117.3060      0.0     117.3060      0.0000  0.0000  innerproduct8_2_DW01_add_68
+c15/inpro8_2/add_2_root_add_2889_4
+                                     117.3060      0.0     117.3060      0.0000  0.0000  innerproduct8_2_DW01_add_72
+c15/inpro8_2/add_2_root_add_2890_4
+                                      94.7340      0.0      94.7340      0.0000  0.0000  innerproduct8_2_DW01_add_31_DW01_add_614
+c15/inpro8_2/add_2_root_add_2891_4
+                                      92.3400      0.0      92.3400      0.0000  0.0000  innerproduct8_2_DW01_add_27_DW01_add_610
+c15/inpro8_2/add_2_root_add_2892_4
+                                      92.3400      0.0      92.3400      0.0000  0.0000  innerproduct8_2_DW01_add_22_DW01_add_605
+c15/inpro8_2/add_2_root_add_2893_4
+                                      91.3140      0.0      91.3140      0.0000  0.0000  innerproduct8_2_DW01_add_18_DW01_add_601
+c15/inpro8_2/add_3_root_add_2886_4
+                                     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct8_2_DW01_add_61
+c15/inpro8_2/add_3_root_add_2887_4
+                                     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct8_2_DW01_add_65
+c15/inpro8_2/add_3_root_add_2888_4
+                                     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct8_2_DW01_add_69
+c15/inpro8_2/add_3_root_add_2889_4
+                                     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct8_2_DW01_add_73
+c15/inpro8_2/add_3_root_add_2890_4
+                                     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct8_2_DW01_add_76
+c15/inpro8_2/add_3_root_add_2891_4
+                                     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct8_2_DW01_add_79
+c15/inpro8_2/add_3_root_add_2892_4
+                                     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct8_2_DW01_add_82
+c15/inpro8_2/add_3_root_add_2893_4
+                                     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct8_2_DW01_add_85
+c15/inpro8_2/mult_2886               423.3960      0.1     423.3960      0.0000  0.0000  innerproduct8_2_DW_mult_tc_48
+c15/inpro8_2/mult_2886_2             423.3960      0.1     423.3960      0.0000  0.0000  innerproduct8_2_DW_mult_tc_49
+c15/inpro8_2/mult_2886_3             395.6940      0.0     395.6940      0.0000  0.0000  innerproduct8_2_DW_mult_tc_77
+c15/inpro8_2/mult_2886_4             393.9840      0.0     393.9840      0.0000  0.0000  innerproduct8_2_DW_mult_tc_78
+c15/inpro8_2/mult_2886_5             401.1660      0.0     401.1660      0.0000  0.0000  innerproduct8_2_DW_mult_tc_79
+c15/inpro8_2/mult_2887               426.8160      0.1     426.8160      0.0000  0.0000  innerproduct8_2_DW_mult_tc_50
+c15/inpro8_2/mult_2887_2             426.8160      0.1     426.8160      0.0000  0.0000  innerproduct8_2_DW_mult_tc_53
+c15/inpro8_2/mult_2887_3             399.1140      0.0     399.1140      0.0000  0.0000  innerproduct8_2_DW_mult_tc_82
+c15/inpro8_2/mult_2887_4             399.1140      0.0     399.1140      0.0000  0.0000  innerproduct8_2_DW_mult_tc_83
+c15/inpro8_2/mult_2887_5             399.4560      0.0     399.4560      0.0000  0.0000  innerproduct8_2_DW_mult_tc_84
+c15/inpro8_2/mult_2888               426.8160      0.1     426.8160      0.0000  0.0000  innerproduct8_2_DW_mult_tc_54
+c15/inpro8_2/mult_2888_2             423.3960      0.1     423.3960      0.0000  0.0000  innerproduct8_2_DW_mult_tc_59
+c15/inpro8_2/mult_2888_3             399.1140      0.0     399.1140      0.0000  0.0000  innerproduct8_2_DW_mult_tc_87
+c15/inpro8_2/mult_2888_4             402.5340      0.0     402.5340      0.0000  0.0000  innerproduct8_2_DW_mult_tc_88
+c15/inpro8_2/mult_2888_5             397.7460      0.0     397.7460      0.0000  0.0000  innerproduct8_2_DW_mult_tc_89
+c15/inpro8_2/mult_2889               425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_2_DW_mult_tc_60
+c15/inpro8_2/mult_2889_2             425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_2_DW_mult_tc_70
+c15/inpro8_2/mult_2889_3             402.5340      0.0     402.5340      0.0000  0.0000  innerproduct8_2_DW_mult_tc_92
+c15/inpro8_2/mult_2889_4             397.4040      0.0     397.4040      0.0000  0.0000  innerproduct8_2_DW_mult_tc_93
+c15/inpro8_2/mult_2889_5             396.0360      0.0     396.0360      0.0000  0.0000  innerproduct8_2_DW_mult_tc_94
+c15/inpro8_2/mult_2890               424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_2_DW_mult_tc_40
+c15/inpro8_2/mult_2890_2             424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_2_DW_mult_tc_44
+c15/inpro8_2/mult_2890_3             390.2220      0.0     390.2220      0.0000  0.0000  innerproduct8_2_DW_mult_tc_97
+c15/inpro8_2/mult_2890_4             400.8240      0.0     400.8240      0.0000  0.0000  innerproduct8_2_DW_mult_tc_98
+c15/inpro8_2/mult_2890_5             392.6160      0.0     392.6160      0.0000  0.0000  innerproduct8_2_DW_mult_tc_99
+c15/inpro8_2/mult_2891               423.7380      0.1     423.7380      0.0000  0.0000  innerproduct8_2_DW_mult_tc_41
+c15/inpro8_2/mult_2891_2             423.3960      0.1     423.3960      0.0000  0.0000  innerproduct8_2_DW_mult_tc_45
+c15/inpro8_2/mult_2891_3             391.9320      0.0     391.9320      0.0000  0.0000  innerproduct8_2_DW_mult_tc_102
+c15/inpro8_2/mult_2891_4             393.6420      0.0     393.6420      0.0000  0.0000  innerproduct8_2_DW_mult_tc_103
+c15/inpro8_2/mult_2891_5             394.3260      0.0     394.3260      0.0000  0.0000  innerproduct8_2_DW_mult_tc_104
+c15/inpro8_2/mult_2892               421.0020      0.1     421.0020      0.0000  0.0000  innerproduct8_2_DW_mult_tc_42
+c15/inpro8_2/mult_2892_2             422.7120      0.1     422.7120      0.0000  0.0000  innerproduct8_2_DW_mult_tc_46
+c15/inpro8_2/mult_2892_3             398.7720      0.0     398.7720      0.0000  0.0000  innerproduct8_2_DW_mult_tc_107
+c15/inpro8_2/mult_2892_4             337.8960      0.0     337.8960      0.0000  0.0000  innerproduct8_2_DW_mult_tc_26_DW_mult_tc_286
+c15/inpro8_2/mult_2892_5             397.7460      0.0     397.7460      0.0000  0.0000  innerproduct8_2_DW_mult_tc_108
+c15/inpro8_2/mult_2893               425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_2_DW_mult_tc_43
+c15/inpro8_2/mult_2893_2             423.3960      0.1     423.3960      0.0000  0.0000  innerproduct8_2_DW_mult_tc_47
+c15/inpro8_2/mult_2893_3             336.5280      0.0     336.5280      0.0000  0.0000  innerproduct8_2_DW_mult_tc_21_DW_mult_tc_281
+c15/inpro8_2/mult_2893_4             337.2120      0.0     337.2120      0.0000  0.0000  innerproduct8_2_DW_mult_tc_22_DW_mult_tc_282
+c15/inpro8_2/mult_2893_5             398.0880      0.0     398.0880      0.0000  0.0000  innerproduct8_2_DW_mult_tc_111
+c15/rq8                            43013.3410      5.1     739.0620      0.0000  0.0000  reluQuan8_3
+c15/rq8/mult_2157                   5277.7441      0.6    5277.7441      0.0000  0.0000  reluQuan8_3_DW_mult_tc_8
+c15/rq8/mult_2158                   5279.7961      0.6    5279.7961      0.0000  0.0000  reluQuan8_3_DW_mult_tc_9
+c15/rq8/mult_2159                   5281.1641      0.6    5281.1641      0.0000  0.0000  reluQuan8_3_DW_mult_tc_10
+c15/rq8/mult_2160                   5274.3241      0.6    5274.3241      0.0000  0.0000  reluQuan8_3_DW_mult_tc_11
+c15/rq8/mult_2161                   5279.1121      0.6    5279.1121      0.0000  0.0000  reluQuan8_3_DW_mult_tc_12
+c15/rq8/mult_2162                   5289.3721      0.6    5289.3721      0.0000  0.0000  reluQuan8_3_DW_mult_tc_13
+c15/rq8/mult_2163                   5296.5541      0.6    5296.5541      0.0000  0.0000  reluQuan8_3_DW_mult_tc_14
+c15/rq8/mult_2164                   5296.2121      0.6    5296.2121      0.0000  0.0000  reluQuan8_3_DW_mult_tc_15
+c17                               164986.5151     19.7    9942.5216  11254.5363  0.0000  conv1_7
+c17/add_0_root_add_0_root_add_3621_2
+                                      73.5300      0.0      73.5300      0.0000  0.0000  conv1_7_DW01_add_57_DW01_add_362
+c17/add_0_root_add_1_root_add_3622_3
+                                      74.2140      0.0      74.2140      0.0000  0.0000  conv1_7_DW01_add_59_DW01_add_364
+c17/add_0_root_add_3739_3             66.3480      0.0      66.3480      0.0000  0.0000  conv1_7_DW01_add_5_DW01_add_240
+c17/add_0_root_add_3740_4             67.3740      0.0      67.3740      0.0000  0.0000  conv1_7_DW01_add_4_DW01_add_239
+c17/add_0_root_add_3802_4             68.0580      0.0      68.0580      0.0000  0.0000  conv1_7_DW01_add_1_DW01_add_236
+c17/add_0_root_add_3803_5             69.0840      0.0      69.0840      0.0000  0.0000  conv1_7_DW01_add_0_DW01_add_235
+c17/add_0_root_r1268                  76.6080      0.0      76.6080      0.0000  0.0000  conv1_7_DW01_add_63_DW01_add_679
+c17/add_0_root_r1271                  76.6080      0.0      76.6080      0.0000  0.0000  conv1_7_DW01_add_66_DW01_add_682
+c17/add_1_root_add_3771_4             71.4780      0.0      71.4780      0.0000  0.0000  conv1_7_DW01_add_3_DW01_add_238
+c17/add_1_root_add_3772_5             72.5040      0.0      72.5040      0.0000  0.0000  conv1_7_DW01_add_2_DW01_add_237
+c17/add_1_root_r1268                  76.6080      0.0      76.6080      0.0000  0.0000  conv1_7_DW01_add_64_DW01_add_680
+c17/add_1_root_r1271                  76.6080      0.0      76.6080      0.0000  0.0000  conv1_7_DW01_add_67_DW01_add_683
+c17/add_3038                          25.9920      0.0      25.9920      0.0000  0.0000  conv1_7_DW01_inc_0_DW01_inc_30
+c17/add_3362_2                       289.3320      0.0     289.3320      0.0000  0.0000  conv1_7_DW01_add_147
+c17/add_3362_2_I10_I1                277.7040      0.0     277.7040      0.0000  0.0000  conv1_7_DW01_add_156
+c17/add_3362_2_I10_I2                276.3360      0.0     276.3360      0.0000  0.0000  conv1_7_DW01_add_134
+c17/add_3362_2_I11_I1                390.2220      0.0     390.2220      0.0000  0.0000  conv1_7_DW01_add_90
+c17/add_3362_2_I11_I2                296.8560      0.0     296.8560      0.0000  0.0000  conv1_7_DW01_add_113
+c17/add_3362_2_I2                    274.6260      0.0     274.6260      0.0000  0.0000  conv1_7_DW01_add_125
+c17/add_3362_2_I2_I1                 286.2540      0.0     286.2540      0.0000  0.0000  conv1_7_DW01_add_148
+c17/add_3362_2_I2_I2                 279.0720      0.0     279.0720      0.0000  0.0000  conv1_7_DW01_add_126
+c17/add_3362_2_I3_I1                 281.1240      0.0     281.1240      0.0000  0.0000  conv1_7_DW01_add_149
+c17/add_3362_2_I3_I2                 275.6520      0.0     275.6520      0.0000  0.0000  conv1_7_DW01_add_127
+c17/add_3362_2_I4_I1                 275.6520      0.0     275.6520      0.0000  0.0000  conv1_7_DW01_add_150
+c17/add_3362_2_I4_I2                 288.3060      0.0     288.3060      0.0000  0.0000  conv1_7_DW01_add_128
+c17/add_3362_2_I5_I1                 277.0200      0.0     277.0200      0.0000  0.0000  conv1_7_DW01_add_151
+c17/add_3362_2_I5_I2                 278.0460      0.0     278.0460      0.0000  0.0000  conv1_7_DW01_add_129
+c17/add_3362_2_I6_I1                 283.1760      0.0     283.1760      0.0000  0.0000  conv1_7_DW01_add_152
+c17/add_3362_2_I6_I2                 277.7040      0.0     277.7040      0.0000  0.0000  conv1_7_DW01_add_130
+c17/add_3362_2_I7_I1                 279.7560      0.0     279.7560      0.0000  0.0000  conv1_7_DW01_add_153
+c17/add_3362_2_I7_I2                 274.2840      0.0     274.2840      0.0000  0.0000  conv1_7_DW01_add_131
+c17/add_3362_2_I8_I1                 278.3880      0.0     278.3880      0.0000  0.0000  conv1_7_DW01_add_154
+c17/add_3362_2_I8_I2                 277.7040      0.0     277.7040      0.0000  0.0000  conv1_7_DW01_add_132
+c17/add_3362_2_I9_I1                 393.6420      0.0     393.6420      0.0000  0.0000  conv1_7_DW01_add_70
+c17/add_3362_2_I9_I2                 271.5480      0.0     271.5480      0.0000  0.0000  conv1_7_DW01_add_133
+c17/inpro7                         86548.9159     10.3     203.1480      0.0000  0.0000  innerproduct7
+c17/inpro7/add_0_root_add_3996_6     146.7180      0.0     146.7180      0.0000  0.0000  innerproduct7_DW01_add_359
+c17/inpro7/add_0_root_add_3997_6     144.3240      0.0     144.3240      0.0000  0.0000  innerproduct7_DW01_add_365
+c17/inpro7/add_0_root_add_3998_6     142.9560      0.0     142.9560      0.0000  0.0000  innerproduct7_DW01_add_371
+c17/inpro7/add_0_root_add_3999_6     128.2500      0.0     128.2500      0.0000  0.0000  innerproduct7_DW01_add_377
+c17/inpro7/add_0_root_add_4000_6     132.0120      0.0     132.0120      0.0000  0.0000  innerproduct7_DW01_add_383
+c17/inpro7/add_0_root_add_4001_6     132.3540      0.0     132.3540      0.0000  0.0000  innerproduct7_DW01_add_389
+c17/inpro7/add_0_root_add_4002_6     146.7180      0.0     146.7180      0.0000  0.0000  innerproduct7_DW01_add_395
+c17/inpro7/add_0_root_add_4003_6     149.4540      0.0     149.4540      0.0000  0.0000  innerproduct7_DW01_add_401
+c17/inpro7/add_0_root_add_4004_6     144.3240      0.0     144.3240      0.0000  0.0000  innerproduct7_DW01_add_407
+c17/inpro7/add_0_root_add_4005_6     137.4840      0.0     137.4840      0.0000  0.0000  innerproduct7_DW01_add_413
+c17/inpro7/add_0_root_add_4006_6     142.9560      0.0     142.9560      0.0000  0.0000  innerproduct7_DW01_add_419
+c17/inpro7/add_0_root_add_4007_5     142.6140      0.0     142.6140      0.0000  0.0000  innerproduct7_DW01_add_354
+c17/inpro7/add_0_root_add_4009_6     152.8740      0.0     152.8740      0.0000  0.0000  innerproduct7_DW01_add_280
+c17/inpro7/add_0_root_add_4010_6     134.7480      0.0     134.7480      0.0000  0.0000  innerproduct7_DW01_add_295
+c17/inpro7/add_0_root_add_4011_6     132.0120      0.0     132.0120      0.0000  0.0000  innerproduct7_DW01_add_301
+c17/inpro7/add_0_root_add_4012_6     133.3800      0.0     133.3800      0.0000  0.0000  innerproduct7_DW01_add_307
+c17/inpro7/add_0_root_add_4013_6     145.6920      0.0     145.6920      0.0000  0.0000  innerproduct7_DW01_add_313
+c17/inpro7/add_0_root_add_4014_6     138.8520      0.0     138.8520      0.0000  0.0000  innerproduct7_DW01_add_319
+c17/inpro7/add_0_root_add_4015_6     138.5100      0.0     138.5100      0.0000  0.0000  innerproduct7_DW01_add_325
+c17/inpro7/add_0_root_add_4016_6     131.6700      0.0     131.6700      0.0000  0.0000  innerproduct7_DW01_add_331
+c17/inpro7/add_0_root_add_4017_6     128.5920      0.0     128.5920      0.0000  0.0000  innerproduct7_DW01_add_337
+c17/inpro7/add_0_root_add_4018_6     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct7_DW01_add_343
+c17/inpro7/add_0_root_add_4019_6     129.6180      0.0     129.6180      0.0000  0.0000  innerproduct7_DW01_add_349
+c17/inpro7/add_0_root_add_4020_5     152.8740      0.0     152.8740      0.0000  0.0000  innerproduct7_DW01_add_278
+c17/inpro7/add_1_root_add_3996_6     120.7260      0.0     120.7260      0.0000  0.0000  innerproduct7_DW01_add_358
+c17/inpro7/add_1_root_add_3997_6     119.3580      0.0     119.3580      0.0000  0.0000  innerproduct7_DW01_add_364
+c17/inpro7/add_1_root_add_3998_6     123.1200      0.0     123.1200      0.0000  0.0000  innerproduct7_DW01_add_370
+c17/inpro7/add_1_root_add_3999_6     123.1200      0.0     123.1200      0.0000  0.0000  innerproduct7_DW01_add_376
+c17/inpro7/add_1_root_add_4000_6     123.1200      0.0     123.1200      0.0000  0.0000  innerproduct7_DW01_add_382
+c17/inpro7/add_1_root_add_4001_6     119.3580      0.0     119.3580      0.0000  0.0000  innerproduct7_DW01_add_388
+c17/inpro7/add_1_root_add_4002_6     116.6220      0.0     116.6220      0.0000  0.0000  innerproduct7_DW01_add_394
+c17/inpro7/add_1_root_add_4003_6     116.6220      0.0     116.6220      0.0000  0.0000  innerproduct7_DW01_add_400
+c17/inpro7/add_1_root_add_4004_6     123.1200      0.0     123.1200      0.0000  0.0000  innerproduct7_DW01_add_406
+c17/inpro7/add_1_root_add_4005_6     119.3580      0.0     119.3580      0.0000  0.0000  innerproduct7_DW01_add_412
+c17/inpro7/add_1_root_add_4006_6     115.5960      0.0     115.5960      0.0000  0.0000  innerproduct7_DW01_add_418
+c17/inpro7/add_1_root_add_4007_5     119.3580      0.0     119.3580      0.0000  0.0000  innerproduct7_DW01_add_353
+c17/inpro7/add_1_root_add_4009_6     112.8600      0.0     112.8600      0.0000  0.0000  innerproduct7_DW01_add_285
+c17/inpro7/add_1_root_add_4010_6     119.3580      0.0     119.3580      0.0000  0.0000  innerproduct7_DW01_add_294
+c17/inpro7/add_1_root_add_4011_6     119.3580      0.0     119.3580      0.0000  0.0000  innerproduct7_DW01_add_300
+c17/inpro7/add_1_root_add_4012_6     123.1200      0.0     123.1200      0.0000  0.0000  innerproduct7_DW01_add_306
+c17/inpro7/add_1_root_add_4013_6     121.7520      0.0     121.7520      0.0000  0.0000  innerproduct7_DW01_add_312
+c17/inpro7/add_1_root_add_4014_6     128.5920      0.0     128.5920      0.0000  0.0000  innerproduct7_DW01_add_318
+c17/inpro7/add_1_root_add_4015_6     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct7_DW01_add_324
+c17/inpro7/add_1_root_add_4016_6     125.5140      0.0     125.5140      0.0000  0.0000  innerproduct7_DW01_add_330
+c17/inpro7/add_1_root_add_4017_6     121.7520      0.0     121.7520      0.0000  0.0000  innerproduct7_DW01_add_336
+c17/inpro7/add_1_root_add_4018_6     119.0160      0.0     119.0160      0.0000  0.0000  innerproduct7_DW01_add_342
+c17/inpro7/add_1_root_add_4019_6     119.0160      0.0     119.0160      0.0000  0.0000  innerproduct7_DW01_add_348
+c17/inpro7/add_1_root_add_4020_5     115.5960      0.0     115.5960      0.0000  0.0000  innerproduct7_DW01_add_289
+c17/inpro7/add_2_root_add_3996_6     136.1160      0.0     136.1160      0.0000  0.0000  innerproduct7_DW01_add_355
+c17/inpro7/add_2_root_add_3997_6     119.0160      0.0     119.0160      0.0000  0.0000  innerproduct7_DW01_add_361
+c17/inpro7/add_2_root_add_3998_6     119.0160      0.0     119.0160      0.0000  0.0000  innerproduct7_DW01_add_367
+c17/inpro7/add_2_root_add_3999_6     125.1720      0.0     125.1720      0.0000  0.0000  innerproduct7_DW01_add_373
+c17/inpro7/add_2_root_add_4000_6     121.4100      0.0     121.4100      0.0000  0.0000  innerproduct7_DW01_add_379
+c17/inpro7/add_2_root_add_4001_6     125.1720      0.0     125.1720      0.0000  0.0000  innerproduct7_DW01_add_385
+c17/inpro7/add_2_root_add_4002_6     122.7780      0.0     122.7780      0.0000  0.0000  innerproduct7_DW01_add_391
+c17/inpro7/add_2_root_add_4003_6     141.5880      0.0     141.5880      0.0000  0.0000  innerproduct7_DW01_add_397
+c17/inpro7/add_2_root_add_4004_6     125.1720      0.0     125.1720      0.0000  0.0000  innerproduct7_DW01_add_403
+c17/inpro7/add_2_root_add_4005_6     122.7780      0.0     122.7780      0.0000  0.0000  innerproduct7_DW01_add_409
+c17/inpro7/add_2_root_add_4006_6     122.7780      0.0     122.7780      0.0000  0.0000  innerproduct7_DW01_add_415
+c17/inpro7/add_2_root_add_4007_5     138.5100      0.0     138.5100      0.0000  0.0000  innerproduct7_DW01_add_350
+c17/inpro7/add_2_root_add_4009_6     115.9380      0.0     115.9380      0.0000  0.0000  innerproduct7_DW01_add_282
+c17/inpro7/add_2_root_add_4010_6     125.5140      0.0     125.5140      0.0000  0.0000  innerproduct7_DW01_add_291
+c17/inpro7/add_2_root_add_4011_6     129.9600      0.0     129.9600      0.0000  0.0000  innerproduct7_DW01_add_297
+c17/inpro7/add_2_root_add_4012_6     130.3020      0.0     130.3020      0.0000  0.0000  innerproduct7_DW01_add_303
+c17/inpro7/add_2_root_add_4013_6     145.0080      0.0     145.0080      0.0000  0.0000  innerproduct7_DW01_add_309
+c17/inpro7/add_2_root_add_4014_6     116.6220      0.0     116.6220      0.0000  0.0000  innerproduct7_DW01_add_315
+c17/inpro7/add_2_root_add_4015_6     125.1720      0.0     125.1720      0.0000  0.0000  innerproduct7_DW01_add_321
+c17/inpro7/add_2_root_add_4016_6     122.4360      0.0     122.4360      0.0000  0.0000  innerproduct7_DW01_add_327
+c17/inpro7/add_2_root_add_4017_6     129.6180      0.0     129.6180      0.0000  0.0000  innerproduct7_DW01_add_333
+c17/inpro7/add_2_root_add_4018_6     127.2240      0.0     127.2240      0.0000  0.0000  innerproduct7_DW01_add_339
+c17/inpro7/add_2_root_add_4019_6     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct7_DW01_add_345
+c17/inpro7/add_2_root_add_4020_5     119.3580      0.0     119.3580      0.0000  0.0000  innerproduct7_DW01_add_286
+c17/inpro7/add_3_root_add_3996_6     144.3240      0.0     144.3240      0.0000  0.0000  innerproduct7_DW01_add_357
+c17/inpro7/add_3_root_add_3997_6     126.5400      0.0     126.5400      0.0000  0.0000  innerproduct7_DW01_add_363
+c17/inpro7/add_3_root_add_3998_6     126.8820      0.0     126.8820      0.0000  0.0000  innerproduct7_DW01_add_369
+c17/inpro7/add_3_root_add_3999_6     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct7_DW01_add_375
+c17/inpro7/add_3_root_add_4000_6     124.8300      0.0     124.8300      0.0000  0.0000  innerproduct7_DW01_add_381
+c17/inpro7/add_3_root_add_4001_6     128.2500      0.0     128.2500      0.0000  0.0000  innerproduct7_DW01_add_387
+c17/inpro7/add_3_root_add_4002_6     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct7_DW01_add_393
+c17/inpro7/add_3_root_add_4003_6     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct7_DW01_add_399
+c17/inpro7/add_3_root_add_4004_6     124.4880      0.0     124.4880      0.0000  0.0000  innerproduct7_DW01_add_405
+c17/inpro7/add_3_root_add_4005_6     125.5140      0.0     125.5140      0.0000  0.0000  innerproduct7_DW01_add_411
+c17/inpro7/add_3_root_add_4006_6     132.6960      0.0     132.6960      0.0000  0.0000  innerproduct7_DW01_add_417
+c17/inpro7/add_3_root_add_4007_5     143.2980      0.0     143.2980      0.0000  0.0000  innerproduct7_DW01_add_352
+c17/inpro7/add_3_root_add_4009_6     138.1680      0.0     138.1680      0.0000  0.0000  innerproduct7_DW01_add_284
+c17/inpro7/add_3_root_add_4010_6     126.5400      0.0     126.5400      0.0000  0.0000  innerproduct7_DW01_add_293
+c17/inpro7/add_3_root_add_4011_6     143.2980      0.0     143.2980      0.0000  0.0000  innerproduct7_DW01_add_299
+c17/inpro7/add_3_root_add_4012_6     137.8260      0.0     137.8260      0.0000  0.0000  innerproduct7_DW01_add_305
+c17/inpro7/add_3_root_add_4013_6     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct7_DW01_add_311
+c17/inpro7/add_3_root_add_4014_6     143.2980      0.0     143.2980      0.0000  0.0000  innerproduct7_DW01_add_317
+c17/inpro7/add_3_root_add_4015_6     139.1940      0.0     139.1940      0.0000  0.0000  innerproduct7_DW01_add_323
+c17/inpro7/add_3_root_add_4016_6     139.1940      0.0     139.1940      0.0000  0.0000  innerproduct7_DW01_add_329
+c17/inpro7/add_3_root_add_4017_6     136.8000      0.0     136.8000      0.0000  0.0000  innerproduct7_DW01_add_335
+c17/inpro7/add_3_root_add_4018_6     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct7_DW01_add_341
+c17/inpro7/add_3_root_add_4019_6     137.8260      0.0     137.8260      0.0000  0.0000  innerproduct7_DW01_add_347
+c17/inpro7/add_3_root_add_4020_5     137.8260      0.0     137.8260      0.0000  0.0000  innerproduct7_DW01_add_288
+c17/inpro7/add_4_root_add_3996_6     120.0420      0.0     120.0420      0.0000  0.0000  innerproduct7_DW01_add_356
+c17/inpro7/add_4_root_add_3997_6     124.4880      0.0     124.4880      0.0000  0.0000  innerproduct7_DW01_add_362
+c17/inpro7/add_4_root_add_3998_6     124.4880      0.0     124.4880      0.0000  0.0000  innerproduct7_DW01_add_368
+c17/inpro7/add_4_root_add_3999_6     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct7_DW01_add_374
+c17/inpro7/add_4_root_add_4000_6     138.5100      0.0     138.5100      0.0000  0.0000  innerproduct7_DW01_add_380
+c17/inpro7/add_4_root_add_4001_6     126.8820      0.0     126.8820      0.0000  0.0000  innerproduct7_DW01_add_386
+c17/inpro7/add_4_root_add_4002_6     133.0380      0.0     133.0380      0.0000  0.0000  innerproduct7_DW01_add_392
+c17/inpro7/add_4_root_add_4003_6     133.0380      0.0     133.0380      0.0000  0.0000  innerproduct7_DW01_add_398
+c17/inpro7/add_4_root_add_4004_6     139.5360      0.0     139.5360      0.0000  0.0000  innerproduct7_DW01_add_404
+c17/inpro7/add_4_root_add_4005_6     136.8000      0.0     136.8000      0.0000  0.0000  innerproduct7_DW01_add_410
+c17/inpro7/add_4_root_add_4006_6     133.7220      0.0     133.7220      0.0000  0.0000  innerproduct7_DW01_add_416
+c17/inpro7/add_4_root_add_4007_5     120.0420      0.0     120.0420      0.0000  0.0000  innerproduct7_DW01_add_351
+c17/inpro7/add_4_root_add_4009_6     121.0680      0.0     121.0680      0.0000  0.0000  innerproduct7_DW01_add_283
+c17/inpro7/add_4_root_add_4010_6     126.5400      0.0     126.5400      0.0000  0.0000  innerproduct7_DW01_add_292
+c17/inpro7/add_4_root_add_4011_6     126.5400      0.0     126.5400      0.0000  0.0000  innerproduct7_DW01_add_298
+c17/inpro7/add_4_root_add_4012_6     123.8040      0.0     123.8040      0.0000  0.0000  innerproduct7_DW01_add_304
+c17/inpro7/add_4_root_add_4013_6     126.5400      0.0     126.5400      0.0000  0.0000  innerproduct7_DW01_add_310
+c17/inpro7/add_4_root_add_4014_6     120.0420      0.0     120.0420      0.0000  0.0000  innerproduct7_DW01_add_316
+c17/inpro7/add_4_root_add_4015_6     124.1460      0.0     124.1460      0.0000  0.0000  innerproduct7_DW01_add_322
+c17/inpro7/add_4_root_add_4016_6     138.5100      0.0     138.5100      0.0000  0.0000  innerproduct7_DW01_add_328
+c17/inpro7/add_4_root_add_4017_6     119.0160      0.0     119.0160      0.0000  0.0000  innerproduct7_DW01_add_334
+c17/inpro7/add_4_root_add_4018_6     133.3800      0.0     133.3800      0.0000  0.0000  innerproduct7_DW01_add_340
+c17/inpro7/add_4_root_add_4019_6     124.4880      0.0     124.4880      0.0000  0.0000  innerproduct7_DW01_add_346
+c17/inpro7/add_4_root_add_4020_5     119.7000      0.0     119.7000      0.0000  0.0000  innerproduct7_DW01_add_287
+c17/inpro7/add_5_root_add_3997_6     126.8820      0.0     126.8820      0.0000  0.0000  innerproduct7_DW01_add_360
+c17/inpro7/add_5_root_add_3998_6     125.5140      0.0     125.5140      0.0000  0.0000  innerproduct7_DW01_add_366
+c17/inpro7/add_5_root_add_3999_6     120.0420      0.0     120.0420      0.0000  0.0000  innerproduct7_DW01_add_372
+c17/inpro7/add_5_root_add_4000_6     117.6480      0.0     117.6480      0.0000  0.0000  innerproduct7_DW01_add_378
+c17/inpro7/add_5_root_add_4001_6     112.5180      0.0     112.5180      0.0000  0.0000  innerproduct7_DW01_add_384
+c17/inpro7/add_5_root_add_4002_6     124.8300      0.0     124.8300      0.0000  0.0000  innerproduct7_DW01_add_390
+c17/inpro7/add_5_root_add_4003_6     132.6960      0.0     132.6960      0.0000  0.0000  innerproduct7_DW01_add_396
+c17/inpro7/add_5_root_add_4004_6     116.2800      0.0     116.2800      0.0000  0.0000  innerproduct7_DW01_add_402
+c17/inpro7/add_5_root_add_4005_6     125.5140      0.0     125.5140      0.0000  0.0000  innerproduct7_DW01_add_408
+c17/inpro7/add_5_root_add_4006_6     112.5180      0.0     112.5180      0.0000  0.0000  innerproduct7_DW01_add_414
+c17/inpro7/add_5_root_add_4010_6     116.2800      0.0     116.2800      0.0000  0.0000  innerproduct7_DW01_add_290
+c17/inpro7/add_5_root_add_4011_6     112.5180      0.0     112.5180      0.0000  0.0000  innerproduct7_DW01_add_296
+c17/inpro7/add_5_root_add_4012_6     116.2800      0.0     116.2800      0.0000  0.0000  innerproduct7_DW01_add_302
+c17/inpro7/add_5_root_add_4013_6     132.6960      0.0     132.6960      0.0000  0.0000  innerproduct7_DW01_add_308
+c17/inpro7/add_5_root_add_4014_6     126.1980      0.0     126.1980      0.0000  0.0000  innerproduct7_DW01_add_314
+c17/inpro7/add_5_root_add_4015_6     116.2800      0.0     116.2800      0.0000  0.0000  innerproduct7_DW01_add_320
+c17/inpro7/add_5_root_add_4016_6     113.5440      0.0     113.5440      0.0000  0.0000  innerproduct7_DW01_add_326
+c17/inpro7/add_5_root_add_4017_6     112.5180      0.0     112.5180      0.0000  0.0000  innerproduct7_DW01_add_332
+c17/inpro7/add_5_root_add_4018_6     112.5180      0.0     112.5180      0.0000  0.0000  innerproduct7_DW01_add_338
+c17/inpro7/add_5_root_add_4019_6     113.5440      0.0     113.5440      0.0000  0.0000  innerproduct7_DW01_add_344
+c17/inpro7/mult_3996_2               424.4220      0.1     424.4220      0.0000  0.0000  innerproduct7_DW_mult_tc_418
+c17/inpro7/mult_3996_3               425.4480      0.1     425.4480      0.0000  0.0000  innerproduct7_DW_mult_tc_419
+c17/inpro7/mult_3996_4               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_420
+c17/inpro7/mult_3996_5               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_421
+c17/inpro7/mult_3996_6               418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_311
+c17/inpro7/mult_3996_7               421.0020      0.1     421.0020      0.0000  0.0000  innerproduct7_DW_mult_tc_313
+c17/inpro7/mult_3997                 422.3700      0.1     422.3700      0.0000  0.0000  innerproduct7_DW_mult_tc_423
+c17/inpro7/mult_3997_2               424.0800      0.1     424.0800      0.0000  0.0000  innerproduct7_DW_mult_tc_424
+c17/inpro7/mult_3997_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_425
+c17/inpro7/mult_3997_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_426
+c17/inpro7/mult_3997_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_427
+c17/inpro7/mult_3997_6               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_428
+c17/inpro7/mult_3997_7               420.6600      0.1     420.6600      0.0000  0.0000  innerproduct7_DW_mult_tc_306
+c17/inpro7/mult_3998                 424.4220      0.1     424.4220      0.0000  0.0000  innerproduct7_DW_mult_tc_430
+c17/inpro7/mult_3998_2               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_431
+c17/inpro7/mult_3998_3               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_432
+c17/inpro7/mult_3998_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_433
+c17/inpro7/mult_3998_5               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_434
+c17/inpro7/mult_3998_6               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_435
+c17/inpro7/mult_3998_7               420.6600      0.1     420.6600      0.0000  0.0000  innerproduct7_DW_mult_tc_307
+c17/inpro7/mult_3999                 417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_437
+c17/inpro7/mult_3999_2               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_438
+c17/inpro7/mult_3999_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_439
+c17/inpro7/mult_3999_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_440
+c17/inpro7/mult_3999_5               419.6340      0.1     419.6340      0.0000  0.0000  innerproduct7_DW_mult_tc_441
+c17/inpro7/mult_3999_6               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_442
+c17/inpro7/mult_3999_7               418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_308
+c17/inpro7/mult_4000                 417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_444
+c17/inpro7/mult_4000_2               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_445
+c17/inpro7/mult_4000_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_446
+c17/inpro7/mult_4000_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_447
+c17/inpro7/mult_4000_5               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_448
+c17/inpro7/mult_4000_6               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_449
+c17/inpro7/mult_4000_7               413.4780      0.0     413.4780      0.0000  0.0000  innerproduct7_DW_mult_tc_443
+c17/inpro7/mult_4001                 417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_451
+c17/inpro7/mult_4001_2               417.9240      0.0     417.9240      0.0000  0.0000  innerproduct7_DW_mult_tc_452
+c17/inpro7/mult_4001_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_453
+c17/inpro7/mult_4001_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_454
+c17/inpro7/mult_4001_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_455
+c17/inpro7/mult_4001_6               420.6600      0.1     420.6600      0.0000  0.0000  innerproduct7_DW_mult_tc_456
+c17/inpro7/mult_4001_7               411.7680      0.0     411.7680      0.0000  0.0000  innerproduct7_DW_mult_tc_450
+c17/inpro7/mult_4002                 418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_458
+c17/inpro7/mult_4002_2               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_459
+c17/inpro7/mult_4002_3               418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_460
+c17/inpro7/mult_4002_4               420.3180      0.1     420.3180      0.0000  0.0000  innerproduct7_DW_mult_tc_461
+c17/inpro7/mult_4002_5               422.0280      0.1     422.0280      0.0000  0.0000  innerproduct7_DW_mult_tc_462
+c17/inpro7/mult_4002_6               420.3180      0.1     420.3180      0.0000  0.0000  innerproduct7_DW_mult_tc_463
+c17/inpro7/mult_4002_7               418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_303
+c17/inpro7/mult_4003                 419.2920      0.1     419.2920      0.0000  0.0000  innerproduct7_DW_mult_tc_178
+c17/inpro7/mult_4003_2               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_466
+c17/inpro7/mult_4003_3               418.6080      0.0     418.6080      0.0000  0.0000  innerproduct7_DW_mult_tc_467
+c17/inpro7/mult_4003_4               420.6600      0.1     420.6600      0.0000  0.0000  innerproduct7_DW_mult_tc_468
+c17/inpro7/mult_4003_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_469
+c17/inpro7/mult_4003_6               418.6080      0.0     418.6080      0.0000  0.0000  innerproduct7_DW_mult_tc_470
+c17/inpro7/mult_4003_7               413.1360      0.0     413.1360      0.0000  0.0000  innerproduct7_DW_mult_tc_464
+c17/inpro7/mult_4004                 418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_472
+c17/inpro7/mult_4004_2               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_473
+c17/inpro7/mult_4004_3               420.6600      0.1     420.6600      0.0000  0.0000  innerproduct7_DW_mult_tc_474
+c17/inpro7/mult_4004_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_475
+c17/inpro7/mult_4004_5               418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_476
+c17/inpro7/mult_4004_6               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_477
+c17/inpro7/mult_4004_7               410.0580      0.0     410.0580      0.0000  0.0000  innerproduct7_DW_mult_tc_471
+c17/inpro7/mult_4005                 418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_479
+c17/inpro7/mult_4005_2               421.0020      0.1     421.0020      0.0000  0.0000  innerproduct7_DW_mult_tc_480
+c17/inpro7/mult_4005_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_481
+c17/inpro7/mult_4005_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_482
+c17/inpro7/mult_4005_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_483
+c17/inpro7/mult_4005_6               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_484
+c17/inpro7/mult_4005_7               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_300
+c17/inpro7/mult_4006                 420.6600      0.1     420.6600      0.0000  0.0000  innerproduct7_DW_mult_tc_486
+c17/inpro7/mult_4006_2               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_487
+c17/inpro7/mult_4006_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_488
+c17/inpro7/mult_4006_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_489
+c17/inpro7/mult_4006_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_490
+c17/inpro7/mult_4006_6               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_491
+c17/inpro7/mult_4006_7               406.6380      0.0     406.6380      0.0000  0.0000  innerproduct7_DW_mult_tc_485
+c17/inpro7/mult_4007                 417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_412
+c17/inpro7/mult_4007_2               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_413
+c17/inpro7/mult_4007_3               418.6080      0.0     418.6080      0.0000  0.0000  innerproduct7_DW_mult_tc_414
+c17/inpro7/mult_4007_4               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_415
+c17/inpro7/mult_4007_5               418.2660      0.0     418.2660      0.0000  0.0000  innerproduct7_DW_mult_tc_310
+c17/inpro7/mult_4007_6               419.9760      0.1     419.9760      0.0000  0.0000  innerproduct7_DW_mult_tc_312
+c17/inpro7/mult_4009_2               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_332
+c17/inpro7/mult_4009_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_333
+c17/inpro7/mult_4009_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_334
+c17/inpro7/mult_4009_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_335
+c17/inpro7/mult_4009_6               385.7760      0.0     385.7760      0.0000  0.0000  innerproduct7_DW_mult_tc_330
+c17/inpro7/mult_4009_7               385.0920      0.0     385.0920      0.0000  0.0000  innerproduct7_DW_mult_tc_331
+c17/inpro7/mult_4010                 417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_341
+c17/inpro7/mult_4010_2               422.3700      0.1     422.3700      0.0000  0.0000  innerproduct7_DW_mult_tc_342
+c17/inpro7/mult_4010_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_343
+c17/inpro7/mult_4010_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_344
+c17/inpro7/mult_4010_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_345
+c17/inpro7/mult_4010_6               418.6080      0.0     418.6080      0.0000  0.0000  innerproduct7_DW_mult_tc_346
+c17/inpro7/mult_4010_7               410.0580      0.0     410.0580      0.0000  0.0000  innerproduct7_DW_mult_tc_340
+c17/inpro7/mult_4011                 425.7900      0.1     425.7900      0.0000  0.0000  innerproduct7_DW_mult_tc_348
+c17/inpro7/mult_4011_2               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_349
+c17/inpro7/mult_4011_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_350
+c17/inpro7/mult_4011_4               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_351
+c17/inpro7/mult_4011_5               419.2920      0.1     419.2920      0.0000  0.0000  innerproduct7_DW_mult_tc_352
+c17/inpro7/mult_4011_6               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_353
+c17/inpro7/mult_4011_7               410.0580      0.0     410.0580      0.0000  0.0000  innerproduct7_DW_mult_tc_347
+c17/inpro7/mult_4012                 417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_355
+c17/inpro7/mult_4012_2               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_356
+c17/inpro7/mult_4012_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_357
+c17/inpro7/mult_4012_4               419.2920      0.1     419.2920      0.0000  0.0000  innerproduct7_DW_mult_tc_358
+c17/inpro7/mult_4012_5               417.9240      0.0     417.9240      0.0000  0.0000  innerproduct7_DW_mult_tc_359
+c17/inpro7/mult_4012_6               419.2920      0.1     419.2920      0.0000  0.0000  innerproduct7_DW_mult_tc_360
+c17/inpro7/mult_4012_7               410.0580      0.0     410.0580      0.0000  0.0000  innerproduct7_DW_mult_tc_354
+c17/inpro7/mult_4013                 419.2920      0.1     419.2920      0.0000  0.0000  innerproduct7_DW_mult_tc_251
+c17/inpro7/mult_4013_2               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_363
+c17/inpro7/mult_4013_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_364
+c17/inpro7/mult_4013_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_365
+c17/inpro7/mult_4013_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_366
+c17/inpro7/mult_4013_6               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_367
+c17/inpro7/mult_4013_7               413.8200      0.0     413.8200      0.0000  0.0000  innerproduct7_DW_mult_tc_361
+c17/inpro7/mult_4014                 417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_369
+c17/inpro7/mult_4014_2               417.9240      0.0     417.9240      0.0000  0.0000  innerproduct7_DW_mult_tc_370
+c17/inpro7/mult_4014_3               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_371
+c17/inpro7/mult_4014_4               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_372
+c17/inpro7/mult_4014_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_373
+c17/inpro7/mult_4014_6               420.6600      0.1     420.6600      0.0000  0.0000  innerproduct7_DW_mult_tc_374
+c17/inpro7/mult_4014_7               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_316
+c17/inpro7/mult_4015                 419.2920      0.1     419.2920      0.0000  0.0000  innerproduct7_DW_mult_tc_376
+c17/inpro7/mult_4015_2               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_377
+c17/inpro7/mult_4015_3               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_378
+c17/inpro7/mult_4015_4               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_379
+c17/inpro7/mult_4015_5               420.6600      0.1     420.6600      0.0000  0.0000  innerproduct7_DW_mult_tc_380
+c17/inpro7/mult_4015_6               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_381
+c17/inpro7/mult_4015_7               410.0580      0.0     410.0580      0.0000  0.0000  innerproduct7_DW_mult_tc_375
+c17/inpro7/mult_4016                 417.9240      0.0     417.9240      0.0000  0.0000  innerproduct7_DW_mult_tc_383
+c17/inpro7/mult_4016_2               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_384
+c17/inpro7/mult_4016_3               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_385
+c17/inpro7/mult_4016_4               421.0020      0.1     421.0020      0.0000  0.0000  innerproduct7_DW_mult_tc_386
+c17/inpro7/mult_4016_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_387
+c17/inpro7/mult_4016_6               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_388
+c17/inpro7/mult_4016_7               410.0580      0.0     410.0580      0.0000  0.0000  innerproduct7_DW_mult_tc_382
+c17/inpro7/mult_4017                 417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_390
+c17/inpro7/mult_4017_2               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_391
+c17/inpro7/mult_4017_3               422.3700      0.1     422.3700      0.0000  0.0000  innerproduct7_DW_mult_tc_392
+c17/inpro7/mult_4017_4               418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_393
+c17/inpro7/mult_4017_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_394
+c17/inpro7/mult_4017_6               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_395
+c17/inpro7/mult_4017_7               410.0580      0.0     410.0580      0.0000  0.0000  innerproduct7_DW_mult_tc_389
+c17/inpro7/mult_4018                 419.2920      0.1     419.2920      0.0000  0.0000  innerproduct7_DW_mult_tc_397
+c17/inpro7/mult_4018_2               421.0020      0.1     421.0020      0.0000  0.0000  innerproduct7_DW_mult_tc_398
+c17/inpro7/mult_4018_3               419.2920      0.1     419.2920      0.0000  0.0000  innerproduct7_DW_mult_tc_399
+c17/inpro7/mult_4018_4               419.2920      0.1     419.2920      0.0000  0.0000  innerproduct7_DW_mult_tc_400
+c17/inpro7/mult_4018_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_401
+c17/inpro7/mult_4018_6               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_402
+c17/inpro7/mult_4018_7               410.0580      0.0     410.0580      0.0000  0.0000  innerproduct7_DW_mult_tc_396
+c17/inpro7/mult_4019                 421.0020      0.1     421.0020      0.0000  0.0000  innerproduct7_DW_mult_tc_404
+c17/inpro7/mult_4019_2               418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_405
+c17/inpro7/mult_4019_3               418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_406
+c17/inpro7/mult_4019_4               418.9500      0.1     418.9500      0.0000  0.0000  innerproduct7_DW_mult_tc_407
+c17/inpro7/mult_4019_5               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_408
+c17/inpro7/mult_4019_6               417.5820      0.0     417.5820      0.0000  0.0000  innerproduct7_DW_mult_tc_409
+c17/inpro7/mult_4019_7               410.0580      0.0     410.0580      0.0000  0.0000  innerproduct7_DW_mult_tc_403
+c17/inpro7/mult_4020                 417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_336
+c17/inpro7/mult_4020_2               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_337
+c17/inpro7/mult_4020_3               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_338
+c17/inpro7/mult_4020_4               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct7_DW_mult_tc_339
+c17/inpro7/mult_4020_5               389.8800      0.0     389.8800      0.0000  0.0000  innerproduct7_DW_mult_tc_328
+c17/inpro7/mult_4020_6               389.8800      0.0     389.8800      0.0000  0.0000  innerproduct7_DW_mult_tc_329
+c17/r1211                             25.9920      0.0      25.9920      0.0000  0.0000  conv1_7_DW01_inc_2_DW01_inc_32
+c17/r1213                             25.3080      0.0      25.3080      0.0000  0.0000  conv1_7_DW01_inc_1_DW01_inc_31
+c17/r1215                            390.2220      0.0     390.2220      0.0000  0.0000  conv1_7_DW01_add_89
+c17/r1216                            280.4400      0.0     280.4400      0.0000  0.0000  conv1_7_DW01_add_137
+c17/r1217                            388.5120      0.0     388.5120      0.0000  0.0000  conv1_7_DW01_add_87
+c17/r1218                            275.3100      0.0     275.3100      0.0000  0.0000  conv1_7_DW01_add_139
+c17/r1219                            278.3880      0.0     278.3880      0.0000  0.0000  conv1_7_DW01_add_140
+c17/r1220                            277.7040      0.0     277.7040      0.0000  0.0000  conv1_7_DW01_add_141
+c17/r1221                            276.6780      0.0     276.6780      0.0000  0.0000  conv1_7_DW01_add_142
+c17/r1222                            282.4920      0.0     282.4920      0.0000  0.0000  conv1_7_DW01_add_143
+c17/r1223                            278.7300      0.0     278.7300      0.0000  0.0000  conv1_7_DW01_add_144
+c17/r1224                            391.9320      0.0     391.9320      0.0000  0.0000  conv1_7_DW01_add_80
+c17/r1225                            390.2220      0.0     390.2220      0.0000  0.0000  conv1_7_DW01_add_79
+c17/r1226                            296.8560      0.0     296.8560      0.0000  0.0000  conv1_7_DW01_add_114
+c17/r1227                            275.6520      0.0     275.6520      0.0000  0.0000  conv1_7_DW01_add_115
+c17/r1228                            274.6260      0.0     274.6260      0.0000  0.0000  conv1_7_DW01_add_116
+c17/r1229                            276.3360      0.0     276.3360      0.0000  0.0000  conv1_7_DW01_add_117
+c17/r1230                            298.5660      0.0     298.5660      0.0000  0.0000  conv1_7_DW01_add_118
+c17/r1231                            391.9320      0.0     391.9320      0.0000  0.0000  conv1_7_DW01_add_106
+c17/r1232                            284.2020      0.0     284.2020      0.0000  0.0000  conv1_7_DW01_add_120
+c17/r1233                            275.6520      0.0     275.6520      0.0000  0.0000  conv1_7_DW01_add_121
+c17/r1234                            278.0460      0.0     278.0460      0.0000  0.0000  conv1_7_DW01_add_122
+c17/r1235                            275.6520      0.0     275.6520      0.0000  0.0000  conv1_7_DW01_add_123
+c17/r1236                            280.0980      0.0     280.0980      0.0000  0.0000  conv1_7_DW01_add_124
+c17/r1277                             27.0180      0.0      27.0180      0.0000  0.0000  conv1_7_DW01_inc_3_DW01_inc_43
+c17/rq8                            43166.5570      5.2     747.9540      0.0000  0.0000  reluQuan8_2
+c17/rq8/mult_2157                   5300.3161      0.6    5300.3161      0.0000  0.0000  reluQuan8_2_DW_mult_tc_10
+c17/rq8/mult_2158                   5291.0821      0.6    5291.0821      0.0000  0.0000  reluQuan8_2_DW_mult_tc_8
+c17/rq8/mult_2159                   5300.3161      0.6    5300.3161      0.0000  0.0000  reluQuan8_2_DW_mult_tc_9
+c17/rq8/mult_2160                   5284.2421      0.6    5284.2421      0.0000  0.0000  reluQuan8_2_DW_mult_tc_11
+c17/rq8/mult_2161                   5316.0481      0.6    5316.0481      0.0000  0.0000  reluQuan8_2_DW_mult_tc_14
+c17/rq8/mult_2162                   5306.1301      0.6    5306.1301      0.0000  0.0000  reluQuan8_2_DW_mult_tc_12
+c17/rq8/mult_2163                   5327.6761      0.6    5327.6761      0.0000  0.0000  reluQuan8_2_DW_mult_tc_13
+c17/rq8/mult_2164                   5292.7921      0.6    5292.7921      0.0000  0.0000  reluQuan8_2_DW_mult_tc_15
+c25                               342697.6876     40.9  164268.4177  27319.9866  0.0000  conv2_5
+c25/add_0_root_add_0_root_add_5005_3
+                                      73.5300      0.0      73.5300      0.0000  0.0000  conv2_5_DW01_add_161_DW01_add_352
+c25/add_0_root_add_0_root_add_5185_4
+                                      64.6380      0.0      64.6380      0.0000  0.0000  conv2_5_DW01_add_159_DW01_add_350
+c25/add_0_root_add_1_root_add_5006_4
+                                      73.5300      0.0      73.5300      0.0000  0.0000  conv2_5_DW01_add_163_DW01_add_354
+c25/add_0_root_r82378                 76.6080      0.0      76.6080      0.0000  0.0000  conv2_5_DW01_add_165_DW01_add_673
+c25/add_0_root_r82380                 76.6080      0.0      76.6080      0.0000  0.0000  conv2_5_DW01_add_167_DW01_add_675
+c25/add_1_root_add_0_root_add_5005_3
+                                      68.4000      0.0      68.4000      0.0000  0.0000  conv2_5_DW01_add_162_DW01_add_353
+c25/add_1_root_add_1_root_add_5006_4
+                                      73.5300      0.0      73.5300      0.0000  0.0000  conv2_5_DW01_add_164_DW01_add_355
+c25/add_1_root_r82378                 63.2700      0.0      63.2700      0.0000  0.0000  conv2_5_DW01_add_166_DW01_add_674
+c25/add_1_root_r82380                 73.1880      0.0      73.1880      0.0000  0.0000  conv2_5_DW01_add_168_DW01_add_676
+c25/add_4147                          25.9920      0.0      25.9920      0.0000  0.0000  conv2_5_DW01_inc_3_DW01_inc_27
+c25/add_4170                          25.9920      0.0      25.9920      0.0000  0.0000  conv2_5_DW01_inc_2_DW01_inc_26
+c25/add_4297                          25.9920      0.0      25.9920      0.0000  0.0000  conv2_5_DW01_inc_1_DW01_inc_25
+c25/add_4346                          25.9920      0.0      25.9920      0.0000  0.0000  conv2_5_DW01_inc_0_DW01_inc_24
+c25/add_4552_2                       307.8000      0.0     307.8000      0.0000  0.0000  conv2_5_DW01_add_350
+c25/add_4552_2_I2_I1                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_349
+c25/add_4552_2_I3_I1                 391.9320      0.0     391.9320      0.0000  0.0000  conv2_5_DW01_add_278
+c25/add_4552_2_I4_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_293
+c25/add_4564_2                       307.8000      0.0     307.8000      0.0000  0.0000  conv2_5_DW01_add_346
+c25/add_4564_2_I2_I1                 307.4580      0.0     307.4580      0.0000  0.0000  conv2_5_DW01_add_345
+c25/add_4584_2                       307.4580      0.0     307.4580      0.0000  0.0000  conv2_5_DW01_add_335
+c25/add_4584_2_I2                    306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_333
+c25/add_4584_2_I2_I1                 306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_334
+c25/add_4584_2_I2_I2                 306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_359
+c25/add_4584_2_I3_I1                 306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_372
+c25/add_4584_2_I3_I2                 389.5380      0.0     389.5380      0.0000  0.0000  conv2_5_DW01_add_273
+c25/add_4584_2_I4_I1                 393.3000      0.0     393.3000      0.0000  0.0000  conv2_5_DW01_add_292
+c25/add_4584_2_I4_I2                 305.4060      0.0     305.4060      0.0000  0.0000  conv2_5_DW01_add_369
+c25/add_4597_2                       307.4580      0.0     307.4580      0.0000  0.0000  conv2_5_DW01_add_325
+c25/add_4597_2_I2                    306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_319
+c25/add_4597_2_I2_I1                 306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_324
+c25/add_4597_2_I2_I2                 302.6700      0.0     302.6700      0.0000  0.0000  conv2_5_DW01_add_332
+c25/add_4616_2                       292.4100      0.0     292.4100      0.0000  0.0000  conv2_5_DW01_add_488
+c25/add_4616_2_I2                    307.4580      0.0     307.4580      0.0000  0.0000  conv2_5_DW01_add_322
+c25/add_4616_2_I2_I1                 293.4360      0.0     293.4360      0.0000  0.0000  conv2_5_DW01_add_486
+c25/add_4616_2_I2_I2                 307.4580      0.0     307.4580      0.0000  0.0000  conv2_5_DW01_add_343
+c25/add_4616_2_I2_I3                 306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_366
+c25/add_4616_2_I3                    285.5700      0.0     285.5700      0.0000  0.0000  conv2_5_DW01_add_467
+c25/add_4616_2_I3_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_276
+c25/add_4616_2_I3_I2                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_370
+c25/add_4616_2_I3_I3                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_271
+c25/add_4616_2_I4_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_291
+c25/add_4616_2_I4_I2                 305.4060      0.0     305.4060      0.0000  0.0000  conv2_5_DW01_add_357
+c25/add_4616_2_I4_I3                 392.9580      0.0     392.9580      0.0000  0.0000  conv2_5_DW01_add_301
+c25/add_4628_2                       391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_203
+c25/add_4628_2_I2                    305.4060      0.0     305.4060      0.0000  0.0000  conv2_5_DW01_add_358
+c25/add_4628_2_I2_I1                 293.4360      0.0     293.4360      0.0000  0.0000  conv2_5_DW01_add_487
+c25/add_4628_2_I2_I2                 291.3840      0.0     291.3840      0.0000  0.0000  conv2_5_DW01_add_490
+c25/add_4628_2_I2_I3                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_356
+c25/add_4628_2_I3                    285.5700      0.0     285.5700      0.0000  0.0000  conv2_5_DW01_add_468
+c25/add_4647_2                       307.4580      0.0     307.4580      0.0000  0.0000  conv2_5_DW01_add_342
+c25/add_4647_2_I2                    305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_362
+c25/add_4647_2_I2_I1                 306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_341
+c25/add_4647_2_I2_I2                 293.7780      0.0     293.7780      0.0000  0.0000  conv2_5_DW01_add_491
+c25/add_4647_2_I2_I3                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_353
+c25/add_4647_2_I2_I4                 391.9320      0.0     391.9320      0.0000  0.0000  conv2_5_DW01_add_190
+c25/add_4647_2_I3                    284.2020      0.0     284.2020      0.0000  0.0000  conv2_5_DW01_add_469
+c25/add_4647_2_I3_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_275
+c25/add_4647_2_I3_I2                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_270
+c25/add_4647_2_I3_I3                 395.0100      0.0     395.0100      0.0000  0.0000  conv2_5_DW01_add_269
+c25/add_4647_2_I3_I4                 393.3000      0.0     393.3000      0.0000  0.0000  conv2_5_DW01_add_268
+c25/add_4647_2_I4                    391.9320      0.0     391.9320      0.0000  0.0000  conv2_5_DW01_add_245
+c25/add_4647_2_I4_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_290
+c25/add_4647_2_I4_I2                 392.9580      0.0     392.9580      0.0000  0.0000  conv2_5_DW01_add_300
+c25/add_4647_2_I4_I3                 393.3000      0.0     393.3000      0.0000  0.0000  conv2_5_DW01_add_299
+c25/add_4647_2_I4_I4                 391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_308
+c25/add_4659_2                       307.8000      0.0     307.8000      0.0000  0.0000  conv2_5_DW01_add_338
+c25/add_4659_2_I2                    305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_323
+c25/add_4659_2_I2_I1                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_337
+c25/add_4659_2_I2_I2                 307.4580      0.0     307.4580      0.0000  0.0000  conv2_5_DW01_add_347
+c25/add_4659_2_I2_I3                 306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_340
+c25/add_4659_2_I2_I4                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_352
+c25/add_4659_2_I3                    395.0100      0.0     395.0100      0.0000  0.0000  conv2_5_DW01_add_244
+c25/add_4659_2_I4                    306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_373
+c25/add_4683_2                       304.3800      0.0     304.3800      0.0000  0.0000  conv2_5_DW01_add_326
+c25/add_4683_2_I2                    393.6420      0.0     393.6420      0.0000  0.0000  conv2_5_DW01_add_242
+c25/add_4683_2_I2_I1                 307.8000      0.0     307.8000      0.0000  0.0000  conv2_5_DW01_add_351
+c25/add_4683_2_I2_I2                 307.8000      0.0     307.8000      0.0000  0.0000  conv2_5_DW01_add_361
+c25/add_4683_2_I2_I3                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_368
+c25/add_4683_2_I2_I4                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_288
+c25/add_4683_2_I3                    391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_241
+c25/add_4683_2_I3_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_267
+c25/add_4683_2_I3_I2                 392.9580      0.0     392.9580      0.0000  0.0000  conv2_5_DW01_add_266
+c25/add_4683_2_I3_I3                 392.9580      0.0     392.9580      0.0000  0.0000  conv2_5_DW01_add_265
+c25/add_4683_2_I3_I4                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_313
+c25/add_4683_2_I4                    391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_258
+c25/add_4683_2_I4_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_298
+c25/add_4683_2_I4_I2                 392.9580      0.0     392.9580      0.0000  0.0000  conv2_5_DW01_add_297
+c25/add_4683_2_I4_I3                 389.8800      0.0     389.8800      0.0000  0.0000  conv2_5_DW01_add_307
+c25/add_4683_2_I4_I4                 389.8800      0.0     389.8800      0.0000  0.0000  conv2_5_DW01_add_318
+c25/add_4695_2                       304.3800      0.0     304.3800      0.0000  0.0000  conv2_5_DW01_add_329
+c25/add_4695_2_I2                    395.0100      0.0     395.0100      0.0000  0.0000  conv2_5_DW01_add_240
+c25/add_4695_2_I2_I1                 307.8000      0.0     307.8000      0.0000  0.0000  conv2_5_DW01_add_354
+c25/add_4695_2_I2_I2                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_348
+c25/add_4695_2_I2_I3                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_181
+c25/add_4695_2_I2_I4                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_287
+c25/add_4695_2_I3                    391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_239
+c25/add_4695_2_I4                    391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_257
+c25/add_4714_2                       391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_238
+c25/add_4714_2_I2                    391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_237
+c25/add_4714_2_I2_I1                 290.3580      0.0     290.3580      0.0000  0.0000  conv2_5_DW01_add_494
+c25/add_4714_2_I2_I2                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_179
+c25/add_4714_2_I2_I3                 391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_286
+c25/add_4714_2_I3                    391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_256
+c25/add_4714_2_I3_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_264
+c25/add_4714_2_I3_I2                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_263
+c25/add_4714_2_I3_I3                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_312
+c25/add_4714_2_I4_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_296
+c25/add_4714_2_I4_I2                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_306
+c25/add_4714_2_I4_I3                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_317
+c25/add_4726_2                       395.3520      0.0     395.3520      0.0000  0.0000  conv2_5_DW01_add_236
+c25/add_4726_2_I2                    391.9320      0.0     391.9320      0.0000  0.0000  conv2_5_DW01_add_235
+c25/add_4726_2_I2_I1                 306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_364
+c25/add_4726_2_I2_I2                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_360
+c25/add_4726_2_I2_I3                 391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_285
+c25/add_4726_2_I3                    391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_255
+c25/add_4745_2                       391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_234
+c25/add_4745_2_I2                    391.9320      0.0     391.9320      0.0000  0.0000  conv2_5_DW01_add_254
+c25/add_4745_2_I2_I1                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_363
+c25/add_4745_2_I2_I2                 391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_284
+c25/add_4745_2_I3_I1                 395.3520      0.0     395.3520      0.0000  0.0000  conv2_5_DW01_add_262
+c25/add_4745_2_I3_I2                 391.9320      0.0     391.9320      0.0000  0.0000  conv2_5_DW01_add_311
+c25/add_4745_2_I4_I1                 391.9320      0.0     391.9320      0.0000  0.0000  conv2_5_DW01_add_305
+c25/add_4745_2_I4_I2                 391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_316
+c25/add_4757_2                       391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_233
+c25/add_4757_2_I2                    391.9320      0.0     391.9320      0.0000  0.0000  conv2_5_DW01_add_253
+c25/add_4757_2_I2_I1                 306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_371
+c25/add_4757_2_I2_I2                 391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_283
+c25/add_4776_2                       391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_252
+c25/add_4776_2_I2_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_282
+c25/add_4776_2_I3_I1                 391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_310
+c25/add_4776_2_I4_I1                 391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_315
+c25/add_4788_2                       391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_251
+c25/add_4788_2_I2_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_281
+c25/add_4802_2                       306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_328
+c25/add_4802_2_I2                    307.4580      0.0     307.4580      0.0000  0.0000  conv2_5_DW01_add_320
+c25/add_4802_2_I2_I1                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_327
+c25/add_4802_2_I2_I2                 304.0380      0.0     304.0380      0.0000  0.0000  conv2_5_DW01_add_336
+c25/add_4802_2_I2_I3                 305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_344
+c25/add_4802_2_I2_I4                 306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_355
+c25/add_4802_2_I2_I5                 393.3000      0.0     393.3000      0.0000  0.0000  conv2_5_DW01_add_280
+c25/add_4802_2_I3                    393.3000      0.0     393.3000      0.0000  0.0000  conv2_5_DW01_add_232
+c25/add_4802_2_I3_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_274
+c25/add_4802_2_I3_I2                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_261
+c25/add_4802_2_I3_I3                 392.9580      0.0     392.9580      0.0000  0.0000  conv2_5_DW01_add_260
+c25/add_4802_2_I3_I4                 392.9580      0.0     392.9580      0.0000  0.0000  conv2_5_DW01_add_259
+c25/add_4802_2_I3_I5                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_309
+c25/add_4802_2_I4                    391.9320      0.0     391.9320      0.0000  0.0000  conv2_5_DW01_add_231
+c25/add_4802_2_I4_I1                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_289
+c25/add_4802_2_I4_I2                 305.4060      0.0     305.4060      0.0000  0.0000  conv2_5_DW01_add_367
+c25/add_4802_2_I4_I3                 391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_294
+c25/add_4802_2_I4_I4                 389.8800      0.0     389.8800      0.0000  0.0000  conv2_5_DW01_add_304
+c25/add_4802_2_I4_I5                 393.3000      0.0     393.3000      0.0000  0.0000  conv2_5_DW01_add_314
+c25/add_4802_2_I5                    391.9320      0.0     391.9320      0.0000  0.0000  conv2_5_DW01_add_250
+c25/add_4809_2                       307.4580      0.0     307.4580      0.0000  0.0000  conv2_5_DW01_add_331
+c25/add_4809_2_I2                    305.7480      0.0     305.7480      0.0000  0.0000  conv2_5_DW01_add_321
+c25/add_4809_2_I2_I1                 307.8000      0.0     307.8000      0.0000  0.0000  conv2_5_DW01_add_330
+c25/add_4809_2_I2_I2                 307.4580      0.0     307.4580      0.0000  0.0000  conv2_5_DW01_add_339
+c25/add_4809_2_I2_I3                 289.6740      0.0     289.6740      0.0000  0.0000  conv2_5_DW01_add_496
+c25/add_4809_2_I2_I4                 306.0900      0.0     306.0900      0.0000  0.0000  conv2_5_DW01_add_365
+c25/add_4809_2_I2_I5                 391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_279
+c25/add_4809_2_I3                    391.2480      0.0     391.2480      0.0000  0.0000  conv2_5_DW01_add_230
+c25/add_4809_2_I4                    391.5900      0.0     391.5900      0.0000  0.0000  conv2_5_DW01_add_229
+c25/add_4809_2_I5                    391.9320      0.0     391.9320      0.0000  0.0000  conv2_5_DW01_add_249
+c25/add_5185_2                        27.0180      0.0      27.0180      0.0000  0.0000  conv2_5_DW01_inc_4_DW01_inc_38
+c25/inpro8_5                       53698.1052      6.4      78.3180      0.0000  0.0000  innerproduct8_5
+c25/inpro8_5/add_0_root_add_5356_4
+                                     162.1080      0.0     162.1080      0.0000  0.0000  innerproduct8_5_DW01_add_219
+c25/inpro8_5/add_0_root_add_5357_4
+                                     159.7140      0.0     159.7140      0.0000  0.0000  innerproduct8_5_DW01_add_221
+c25/inpro8_5/add_0_root_add_5358_4
+                                     160.7400      0.0     160.7400      0.0000  0.0000  innerproduct8_5_DW01_add_205
+c25/inpro8_5/add_0_root_add_5359_4
+                                     155.6100      0.0     155.6100      0.0000  0.0000  innerproduct8_5_DW01_add_241
+c25/inpro8_5/add_0_root_add_5360_4
+                                     151.5060      0.0     151.5060      0.0000  0.0000  innerproduct8_5_DW01_add_215
+c25/inpro8_5/add_0_root_add_5361_4
+                                     155.2680      0.0     155.2680      0.0000  0.0000  innerproduct8_5_DW01_add_217
+c25/inpro8_5/add_0_root_add_5362_4
+                                     167.2380      0.0     167.2380      0.0000  0.0000  innerproduct8_5_DW01_add_209
+c25/inpro8_5/add_0_root_add_5363_4
+                                     163.8180      0.0     163.8180      0.0000  0.0000  innerproduct8_5_DW01_add_211
+c25/inpro8_5/add_0_root_add_5364_4
+                                     154.9260      0.0     154.9260      0.0000  0.0000  innerproduct8_5_DW01_add_261
+c25/inpro8_5/add_0_root_add_5365_4
+                                     159.0300      0.0     159.0300      0.0000  0.0000  innerproduct8_5_DW01_add_213
+c25/inpro8_5/add_0_root_add_5366_4
+                                     151.8480      0.0     151.8480      0.0000  0.0000  innerproduct8_5_DW01_add_249
+c25/inpro8_5/add_0_root_add_5367_4
+                                     151.5060      0.0     151.5060      0.0000  0.0000  innerproduct8_5_DW01_add_237
+c25/inpro8_5/add_0_root_add_5368_4
+                                     150.8220      0.0     150.8220      0.0000  0.0000  innerproduct8_5_DW01_add_203
+c25/inpro8_5/add_0_root_add_5369_4
+                                     158.0040      0.0     158.0040      0.0000  0.0000  innerproduct8_5_DW01_add_207
+c25/inpro8_5/add_0_root_add_5370_4
+                                     147.0600      0.0     147.0600      0.0000  0.0000  innerproduct8_5_DW01_add_253
+c25/inpro8_5/add_0_root_add_5371_4
+                                     153.2160      0.0     153.2160      0.0000  0.0000  innerproduct8_5_DW01_add_233
+c25/inpro8_5/add_0_root_add_5372_4
+                                     145.3500      0.0     145.3500      0.0000  0.0000  innerproduct8_5_DW01_add_257
+c25/inpro8_5/add_0_root_add_5373_4
+                                     150.1380      0.0     150.1380      0.0000  0.0000  innerproduct8_5_DW01_add_245
+c25/inpro8_5/add_0_root_add_5374_4
+                                     150.8220      0.0     150.8220      0.0000  0.0000  innerproduct8_5_DW01_add_229
+c25/inpro8_5/add_0_root_add_5375_4
+                                     151.8480      0.0     151.8480      0.0000  0.0000  innerproduct8_5_DW01_add_225
+c25/inpro8_5/add_1_root_add_5356_4
+                                     144.3240      0.0     144.3240      0.0000  0.0000  innerproduct8_5_DW01_add_167
+c25/inpro8_5/add_1_root_add_5357_4
+                                     144.3240      0.0     144.3240      0.0000  0.0000  innerproduct8_5_DW01_add_164
+c25/inpro8_5/add_1_root_add_5358_4
+                                     134.4060      0.0     134.4060      0.0000  0.0000  innerproduct8_5_DW01_add_185
+c25/inpro8_5/add_1_root_add_5359_4
+                                     148.4280      0.0     148.4280      0.0000  0.0000  innerproduct8_5_DW01_add_240
+c25/inpro8_5/add_1_root_add_5360_4
+                                     144.3240      0.0     144.3240      0.0000  0.0000  innerproduct8_5_DW01_add_161
+c25/inpro8_5/add_1_root_add_5361_4
+                                     144.3240      0.0     144.3240      0.0000  0.0000  innerproduct8_5_DW01_add_170
+c25/inpro8_5/add_1_root_add_5362_4
+                                     134.4060      0.0     134.4060      0.0000  0.0000  innerproduct8_5_DW01_add_182
+c25/inpro8_5/add_1_root_add_5363_4
+                                     144.3240      0.0     144.3240      0.0000  0.0000  innerproduct8_5_DW01_add_179
+c25/inpro8_5/add_1_root_add_5364_4
+                                     147.7440      0.0     147.7440      0.0000  0.0000  innerproduct8_5_DW01_add_260
+c25/inpro8_5/add_1_root_add_5365_4
+                                     144.3240      0.0     144.3240      0.0000  0.0000  innerproduct8_5_DW01_add_173
+c25/inpro8_5/add_1_root_add_5366_4
+                                     141.9300      0.0     141.9300      0.0000  0.0000  innerproduct8_5_DW01_add_248
+c25/inpro8_5/add_1_root_add_5367_4
+                                     141.2460      0.0     141.2460      0.0000  0.0000  innerproduct8_5_DW01_add_236
+c25/inpro8_5/add_1_root_add_5368_4
+                                     134.4060      0.0     134.4060      0.0000  0.0000  innerproduct8_5_DW01_add_189
+c25/inpro8_5/add_1_root_add_5369_4
+                                     144.3240      0.0     144.3240      0.0000  0.0000  innerproduct8_5_DW01_add_176
+c25/inpro8_5/add_1_root_add_5370_4
+                                     141.5880      0.0     141.5880      0.0000  0.0000  innerproduct8_5_DW01_add_252
+c25/inpro8_5/add_1_root_add_5371_4
+                                     146.7180      0.0     146.7180      0.0000  0.0000  innerproduct8_5_DW01_add_232
+c25/inpro8_5/add_1_root_add_5372_4
+                                     128.5920      0.0     128.5920      0.0000  0.0000  innerproduct8_5_DW01_add_256
+c25/inpro8_5/add_1_root_add_5373_4
+                                     129.2760      0.0     129.2760      0.0000  0.0000  innerproduct8_5_DW01_add_244
+c25/inpro8_5/add_1_root_add_5374_4
+                                     138.5100      0.0     138.5100      0.0000  0.0000  innerproduct8_5_DW01_add_228
+c25/inpro8_5/add_1_root_add_5375_4
+                                     145.3500      0.0     145.3500      0.0000  0.0000  innerproduct8_5_DW01_add_224
+c25/inpro8_5/add_2_root_add_5356_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_218
+c25/inpro8_5/add_2_root_add_5357_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_220
+c25/inpro8_5/add_2_root_add_5358_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_204
+c25/inpro8_5/add_2_root_add_5359_4
+                                     137.8260      0.0     137.8260      0.0000  0.0000  innerproduct8_5_DW01_add_238
+c25/inpro8_5/add_2_root_add_5360_4
+                                     142.9560      0.0     142.9560      0.0000  0.0000  innerproduct8_5_DW01_add_214
+c25/inpro8_5/add_2_root_add_5361_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_216
+c25/inpro8_5/add_2_root_add_5362_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_208
+c25/inpro8_5/add_2_root_add_5363_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_210
+c25/inpro8_5/add_2_root_add_5364_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_258
+c25/inpro8_5/add_2_root_add_5365_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_212
+c25/inpro8_5/add_2_root_add_5366_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_246
+c25/inpro8_5/add_2_root_add_5367_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_234
+c25/inpro8_5/add_2_root_add_5368_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_202
+c25/inpro8_5/add_2_root_add_5369_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_206
+c25/inpro8_5/add_2_root_add_5370_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_250
+c25/inpro8_5/add_2_root_add_5371_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_230
+c25/inpro8_5/add_2_root_add_5372_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_254
+c25/inpro8_5/add_2_root_add_5373_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_242
+c25/inpro8_5/add_2_root_add_5374_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_226
+c25/inpro8_5/add_2_root_add_5375_4
+                                     140.5620      0.0     140.5620      0.0000  0.0000  innerproduct8_5_DW01_add_222
+c25/inpro8_5/add_3_root_add_5356_4
+                                     145.0080      0.0     145.0080      0.0000  0.0000  innerproduct8_5_DW01_add_166
+c25/inpro8_5/add_3_root_add_5357_4
+                                     145.0080      0.0     145.0080      0.0000  0.0000  innerproduct8_5_DW01_add_163
+c25/inpro8_5/add_3_root_add_5358_4
+                                     142.6140      0.0     142.6140      0.0000  0.0000  innerproduct8_5_DW01_add_184
+c25/inpro8_5/add_3_root_add_5359_4
+                                     128.9340      0.0     128.9340      0.0000  0.0000  innerproduct8_5_DW01_add_239
+c25/inpro8_5/add_3_root_add_5360_4
+                                     145.0080      0.0     145.0080      0.0000  0.0000  innerproduct8_5_DW01_add_160
+c25/inpro8_5/add_3_root_add_5361_4
+                                     145.0080      0.0     145.0080      0.0000  0.0000  innerproduct8_5_DW01_add_169
+c25/inpro8_5/add_3_root_add_5362_4
+                                     145.6920      0.0     145.6920      0.0000  0.0000  innerproduct8_5_DW01_add_181
+c25/inpro8_5/add_3_root_add_5363_4
+                                     145.0080      0.0     145.0080      0.0000  0.0000  innerproduct8_5_DW01_add_178
+c25/inpro8_5/add_3_root_add_5364_4
+                                     132.0120      0.0     132.0120      0.0000  0.0000  innerproduct8_5_DW01_add_259
+c25/inpro8_5/add_3_root_add_5365_4
+                                     145.0080      0.0     145.0080      0.0000  0.0000  innerproduct8_5_DW01_add_172
+c25/inpro8_5/add_3_root_add_5366_4
+                                     133.3800      0.0     133.3800      0.0000  0.0000  innerproduct8_5_DW01_add_247
+c25/inpro8_5/add_3_root_add_5367_4
+                                     132.3540      0.0     132.3540      0.0000  0.0000  innerproduct8_5_DW01_add_235
+c25/inpro8_5/add_3_root_add_5368_4
+                                     142.6140      0.0     142.6140      0.0000  0.0000  innerproduct8_5_DW01_add_188
+c25/inpro8_5/add_3_root_add_5369_4
+                                     145.0080      0.0     145.0080      0.0000  0.0000  innerproduct8_5_DW01_add_175
+c25/inpro8_5/add_3_root_add_5370_4
+                                     133.0380      0.0     133.0380      0.0000  0.0000  innerproduct8_5_DW01_add_251
+c25/inpro8_5/add_3_root_add_5371_4
+                                     133.3800      0.0     133.3800      0.0000  0.0000  innerproduct8_5_DW01_add_231
+c25/inpro8_5/add_3_root_add_5372_4
+                                     139.1940      0.0     139.1940      0.0000  0.0000  innerproduct8_5_DW01_add_255
+c25/inpro8_5/add_3_root_add_5373_4
+                                     136.4580      0.0     136.4580      0.0000  0.0000  innerproduct8_5_DW01_add_243
+c25/inpro8_5/add_3_root_add_5374_4
+                                     132.0120      0.0     132.0120      0.0000  0.0000  innerproduct8_5_DW01_add_227
+c25/inpro8_5/add_3_root_add_5375_4
+                                     135.4320      0.0     135.4320      0.0000  0.0000  innerproduct8_5_DW01_add_223
+c25/inpro8_5/mult_5356               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_205
+c25/inpro8_5/mult_5356_2             417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_203
+c25/inpro8_5/mult_5356_3             424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_5_DW_mult_tc_145
+c25/inpro8_5/mult_5356_4             424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_5_DW_mult_tc_146
+c25/inpro8_5/mult_5356_5             424.0800      0.1     424.0800      0.0000  0.0000  innerproduct8_5_DW_mult_tc_151
+c25/inpro8_5/mult_5357               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_204
+c25/inpro8_5/mult_5357_2             417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_202
+c25/inpro8_5/mult_5357_3             417.5820      0.0     417.5820      0.0000  0.0000  innerproduct8_5_DW_mult_tc_257
+c25/inpro8_5/mult_5357_4             421.0020      0.1     421.0020      0.0000  0.0000  innerproduct8_5_DW_mult_tc_149
+c25/inpro8_5/mult_5357_5             424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_5_DW_mult_tc_152
+c25/inpro8_5/mult_5358               416.5560      0.0     416.5560      0.0000  0.0000  innerproduct8_5_DW_mult_tc_234
+c25/inpro8_5/mult_5358_2             417.9240      0.0     417.9240      0.0000  0.0000  innerproduct8_5_DW_mult_tc_215
+c25/inpro8_5/mult_5358_3             421.6860      0.1     421.6860      0.0000  0.0000  innerproduct8_5_DW_mult_tc_172
+c25/inpro8_5/mult_5358_4             425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_5_DW_mult_tc_177
+c25/inpro8_5/mult_5358_5             424.0800      0.1     424.0800      0.0000  0.0000  innerproduct8_5_DW_mult_tc_186
+c25/inpro8_5/mult_5359               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_283
+c25/inpro8_5/mult_5359_2             417.5820      0.0     417.5820      0.0000  0.0000  innerproduct8_5_DW_mult_tc_284
+c25/inpro8_5/mult_5359_3             421.0020      0.1     421.0020      0.0000  0.0000  innerproduct8_5_DW_mult_tc_174
+c25/inpro8_5/mult_5359_4             424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_5_DW_mult_tc_179
+c25/inpro8_5/mult_5359_5             421.3440      0.1     421.3440      0.0000  0.0000  innerproduct8_5_DW_mult_tc_188
+c25/inpro8_5/mult_5360               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_201
+c25/inpro8_5/mult_5360_2             417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_200
+c25/inpro8_5/mult_5360_3             420.6600      0.1     420.6600      0.0000  0.0000  innerproduct8_5_DW_mult_tc_148
+c25/inpro8_5/mult_5360_4             418.9500      0.1     418.9500      0.0000  0.0000  innerproduct8_5_DW_mult_tc_249
+c25/inpro8_5/mult_5360_5             423.0540      0.1     423.0540      0.0000  0.0000  innerproduct8_5_DW_mult_tc_153
+c25/inpro8_5/mult_5361               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_207
+c25/inpro8_5/mult_5361_2             418.6080      0.0     418.6080      0.0000  0.0000  innerproduct8_5_DW_mult_tc_206
+c25/inpro8_5/mult_5361_3             424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_5_DW_mult_tc_136
+c25/inpro8_5/mult_5361_4             419.2920      0.1     419.2920      0.0000  0.0000  innerproduct8_5_DW_mult_tc_252
+c25/inpro8_5/mult_5361_5             424.7640      0.1     424.7640      0.0000  0.0000  innerproduct8_5_DW_mult_tc_142
+c25/inpro8_5/mult_5362               419.6340      0.1     419.6340      0.0000  0.0000  innerproduct8_5_DW_mult_tc_241
+c25/inpro8_5/mult_5362_2             417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_214
+c25/inpro8_5/mult_5362_3             422.7120      0.1     422.7120      0.0000  0.0000  innerproduct8_5_DW_mult_tc_165
+c25/inpro8_5/mult_5362_4             417.5820      0.0     417.5820      0.0000  0.0000  innerproduct8_5_DW_mult_tc_239
+c25/inpro8_5/mult_5362_5             423.0540      0.1     423.0540      0.0000  0.0000  innerproduct8_5_DW_mult_tc_183
+c25/inpro8_5/mult_5363               418.6080      0.0     418.6080      0.0000  0.0000  innerproduct8_5_DW_mult_tc_213
+c25/inpro8_5/mult_5363_2             417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_211
+c25/inpro8_5/mult_5363_3             424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_5_DW_mult_tc_175
+c25/inpro8_5/mult_5363_4             417.5820      0.0     417.5820      0.0000  0.0000  innerproduct8_5_DW_mult_tc_243
+c25/inpro8_5/mult_5363_5             423.3960      0.1     423.3960      0.0000  0.0000  innerproduct8_5_DW_mult_tc_189
+c25/inpro8_5/mult_5364               413.4780      0.0     413.4780      0.0000  0.0000  innerproduct8_5_DW_mult_tc_308
+c25/inpro8_5/mult_5364_2             418.6080      0.0     418.6080      0.0000  0.0000  innerproduct8_5_DW_mult_tc_309
+c25/inpro8_5/mult_5364_3             419.2920      0.1     419.2920      0.0000  0.0000  innerproduct8_5_DW_mult_tc_154
+c25/inpro8_5/mult_5364_4             427.8420      0.1     427.8420      0.0000  0.0000  innerproduct8_5_DW_mult_tc_156
+c25/inpro8_5/mult_5364_5             426.1320      0.1     426.1320      0.0000  0.0000  innerproduct8_5_DW_mult_tc_158
+c25/inpro8_5/mult_5365               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_209
+c25/inpro8_5/mult_5365_2             418.6080      0.0     418.6080      0.0000  0.0000  innerproduct8_5_DW_mult_tc_208
+c25/inpro8_5/mult_5365_3             424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_5_DW_mult_tc_137
+c25/inpro8_5/mult_5365_4             426.1320      0.1     426.1320      0.0000  0.0000  innerproduct8_5_DW_mult_tc_140
+c25/inpro8_5/mult_5365_5             423.0540      0.1     423.0540      0.0000  0.0000  innerproduct8_5_DW_mult_tc_143
+c25/inpro8_5/mult_5366               420.6600      0.1     420.6600      0.0000  0.0000  innerproduct8_5_DW_mult_tc_293
+c25/inpro8_5/mult_5366_2             418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_5_DW_mult_tc_294
+c25/inpro8_5/mult_5366_3             425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_5_DW_mult_tc_166
+c25/inpro8_5/mult_5366_4             425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_5_DW_mult_tc_170
+c25/inpro8_5/mult_5366_5             421.0020      0.1     421.0020      0.0000  0.0000  innerproduct8_5_DW_mult_tc_184
+c25/inpro8_5/mult_5367               418.9500      0.1     418.9500      0.0000  0.0000  innerproduct8_5_DW_mult_tc_278
+c25/inpro8_5/mult_5367_2             418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_5_DW_mult_tc_279
+c25/inpro8_5/mult_5367_3             424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_5_DW_mult_tc_176
+c25/inpro8_5/mult_5367_4             422.7120      0.1     422.7120      0.0000  0.0000  innerproduct8_5_DW_mult_tc_181
+c25/inpro8_5/mult_5367_5             426.4740      0.1     426.4740      0.0000  0.0000  innerproduct8_5_DW_mult_tc_190
+c25/inpro8_5/mult_5368               418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_5_DW_mult_tc_230
+c25/inpro8_5/mult_5368_2             417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_216
+c25/inpro8_5/mult_5368_3             421.6860      0.1     421.6860      0.0000  0.0000  innerproduct8_5_DW_mult_tc_155
+c25/inpro8_5/mult_5368_4             425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_5_DW_mult_tc_157
+c25/inpro8_5/mult_5368_5             421.3440      0.1     421.3440      0.0000  0.0000  innerproduct8_5_DW_mult_tc_159
+c25/inpro8_5/mult_5369               419.6340      0.1     419.6340      0.0000  0.0000  innerproduct8_5_DW_mult_tc_212
+c25/inpro8_5/mult_5369_2             420.3180      0.1     420.3180      0.0000  0.0000  innerproduct8_5_DW_mult_tc_210
+c25/inpro8_5/mult_5369_3             424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_5_DW_mult_tc_138
+c25/inpro8_5/mult_5369_4             419.2920      0.1     419.2920      0.0000  0.0000  innerproduct8_5_DW_mult_tc_141
+c25/inpro8_5/mult_5369_5             424.0800      0.1     424.0800      0.0000  0.0000  innerproduct8_5_DW_mult_tc_144
+c25/inpro8_5/mult_5370               419.2920      0.1     419.2920      0.0000  0.0000  innerproduct8_5_DW_mult_tc_298
+c25/inpro8_5/mult_5370_2             418.6080      0.0     418.6080      0.0000  0.0000  innerproduct8_5_DW_mult_tc_299
+c25/inpro8_5/mult_5370_3             421.6860      0.1     421.6860      0.0000  0.0000  innerproduct8_5_DW_mult_tc_167
+c25/inpro8_5/mult_5370_4             425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_5_DW_mult_tc_171
+c25/inpro8_5/mult_5370_5             423.0540      0.1     423.0540      0.0000  0.0000  innerproduct8_5_DW_mult_tc_185
+c25/inpro8_5/mult_5371               418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_5_DW_mult_tc_273
+c25/inpro8_5/mult_5371_2             417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_274
+c25/inpro8_5/mult_5371_3             425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_5_DW_mult_tc_191
+c25/inpro8_5/mult_5371_4             423.3960      0.1     423.3960      0.0000  0.0000  innerproduct8_5_DW_mult_tc_192
+c25/inpro8_5/mult_5371_5             424.7640      0.1     424.7640      0.0000  0.0000  innerproduct8_5_DW_mult_tc_193
+c25/inpro8_5/mult_5372               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_303
+c25/inpro8_5/mult_5372_2             418.9500      0.1     418.9500      0.0000  0.0000  innerproduct8_5_DW_mult_tc_304
+c25/inpro8_5/mult_5372_3             425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_5_DW_mult_tc_164
+c25/inpro8_5/mult_5372_4             425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_5_DW_mult_tc_168
+c25/inpro8_5/mult_5372_5             419.6340      0.1     419.6340      0.0000  0.0000  innerproduct8_5_DW_mult_tc_182
+c25/inpro8_5/mult_5373               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_288
+c25/inpro8_5/mult_5373_2             419.6340      0.1     419.6340      0.0000  0.0000  innerproduct8_5_DW_mult_tc_289
+c25/inpro8_5/mult_5373_3             425.1060      0.1     425.1060      0.0000  0.0000  innerproduct8_5_DW_mult_tc_173
+c25/inpro8_5/mult_5373_4             423.3960      0.1     423.3960      0.0000  0.0000  innerproduct8_5_DW_mult_tc_178
+c25/inpro8_5/mult_5373_5             423.0540      0.1     423.0540      0.0000  0.0000  innerproduct8_5_DW_mult_tc_187
+c25/inpro8_5/mult_5374               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_268
+c25/inpro8_5/mult_5374_2             418.9500      0.1     418.9500      0.0000  0.0000  innerproduct8_5_DW_mult_tc_269
+c25/inpro8_5/mult_5374_3             424.4220      0.1     424.4220      0.0000  0.0000  innerproduct8_5_DW_mult_tc_194
+c25/inpro8_5/mult_5374_4             423.3960      0.1     423.3960      0.0000  0.0000  innerproduct8_5_DW_mult_tc_195
+c25/inpro8_5/mult_5374_5             424.7640      0.1     424.7640      0.0000  0.0000  innerproduct8_5_DW_mult_tc_198
+c25/inpro8_5/mult_5375               417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_263
+c25/inpro8_5/mult_5375_2             417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_5_DW_mult_tc_264
+c25/inpro8_5/mult_5375_3             417.5820      0.0     417.5820      0.0000  0.0000  innerproduct8_5_DW_mult_tc_196
+c25/inpro8_5/mult_5375_4             422.7120      0.1     422.7120      0.0000  0.0000  innerproduct8_5_DW_mult_tc_197
+c25/inpro8_5/mult_5375_5             426.8160      0.1     426.8160      0.0000  0.0000  innerproduct8_5_DW_mult_tc_199
+c25/mult_5184_2                       38.3040      0.0      38.3040      0.0000  0.0000  conv2_5_DW_mult_uns_4_DW_mult_uns_24
+c25/mult_5185_2                       43.4340      0.0      43.4340      0.0000  0.0000  conv2_5_DW_mult_uns_5_DW_mult_uns_25
+c25/prq                            43501.0330      5.2     745.2180      0.0000  0.0000  reluQuan8_1
+c25/prq/mult_2157                   5302.0261      0.6    5302.0261      0.0000  0.0000  reluQuan8_1_DW_mult_tc_14
+c25/prq/mult_2158                   5310.5761      0.6    5310.5761      0.0000  0.0000  reluQuan8_1_DW_mult_tc_15
+c25/prq/mult_2159                   5333.4901      0.6    5333.4901      0.0000  0.0000  reluQuan8_1_DW_mult_tc_13
+c25/prq/mult_2160                   5344.4341      0.6    5344.4341      0.0000  0.0000  reluQuan8_1_DW_mult_tc_12
+c25/prq/mult_2161                   5367.0061      0.6    5367.0061      0.0000  0.0000  reluQuan8_1_DW_mult_tc_8
+c25/prq/mult_2162                   5372.1361      0.6    5372.1361      0.0000  0.0000  reluQuan8_1_DW_mult_tc_9
+c25/prq/mult_2163                   5364.2701      0.6    5364.2701      0.0000  0.0000  reluQuan8_1_DW_mult_tc_10
+c25/prq/mult_2164                   5361.8761      0.6    5361.8761      0.0000  0.0000  reluQuan8_1_DW_mult_tc_11
+c27                               139802.0791     16.7    6998.6882  10882.0982  0.0000  conv2_7
+c27/add_0_root_add_0_root_add_6013_3
+                                      69.4260      0.0      69.4260      0.0000  0.0000  conv2_7_DW01_add_30_DW01_add_344
+c27/add_0_root_add_0_root_add_6176_4
+                                      64.6380      0.0      64.6380      0.0000  0.0000  conv2_7_DW01_add_42_DW01_add_819
+c27/add_0_root_add_1_root_add_6014_4
+                                      69.4260      0.0      69.4260      0.0000  0.0000  conv2_7_DW01_add_32_DW01_add_346
+c27/add_0_root_add_6142_3             64.6380      0.0      64.6380      0.0000  0.0000  conv2_7_DW01_add_2_DW01_add_49
+c27/add_0_root_r1090                  79.6860      0.0      79.6860      0.0000  0.0000  conv2_7_DW01_add_34_DW01_add_507
+c27/add_0_root_r1093                  79.6860      0.0      79.6860      0.0000  0.0000  conv2_7_DW01_add_37_DW01_add_510
+c27/add_1_root_add_0_root_add_6013_3
+                                      72.5040      0.0      72.5040      0.0000  0.0000  conv2_7_DW01_add_31_DW01_add_345
+c27/add_1_root_add_1_root_add_6014_4
+                                      73.1880      0.0      73.1880      0.0000  0.0000  conv2_7_DW01_add_33_DW01_add_347
+c27/add_1_root_r1090                  66.3480      0.0      66.3480      0.0000  0.0000  conv2_7_DW01_add_35_DW01_add_508
+c27/add_1_root_r1093                  66.3480      0.0      66.3480      0.0000  0.0000  conv2_7_DW01_add_38_DW01_add_511
+c27/add_5511                          25.9920      0.0      25.9920      0.0000  0.0000  conv2_7_DW01_inc_1_DW01_inc_21
+c27/add_5532                          25.9920      0.0      25.9920      0.0000  0.0000  conv2_7_DW01_inc_0_DW01_inc_20
+c27/add_5791                         389.8800      0.0     389.8800      0.0000  0.0000  conv2_7_DW01_add_52
+c27/add_5791_I10_I1                  387.8280      0.0     387.8280      0.0000  0.0000  conv2_7_DW01_add_53
+c27/add_5791_I10_I2                  296.1720      0.0     296.1720      0.0000  0.0000  conv2_7_DW01_add_65
+c27/add_5791_I2                      296.1720      0.0     296.1720      0.0000  0.0000  conv2_7_DW01_add_64
+c27/add_5791_I2_I1                   276.3360      0.0     276.3360      0.0000  0.0000  conv2_7_DW01_add_76
+c27/add_5791_I2_I2                   273.9420      0.0     273.9420      0.0000  0.0000  conv2_7_DW01_add_66
+c27/add_5791_I3_I1                   275.6520      0.0     275.6520      0.0000  0.0000  conv2_7_DW01_add_77
+c27/add_5791_I3_I2                   277.3620      0.0     277.3620      0.0000  0.0000  conv2_7_DW01_add_67
+c27/add_5791_I4_I1                   273.6000      0.0     273.6000      0.0000  0.0000  conv2_7_DW01_add_78
+c27/add_5791_I4_I2                   273.9420      0.0     273.9420      0.0000  0.0000  conv2_7_DW01_add_68
+c27/add_5791_I5_I1                   276.6780      0.0     276.6780      0.0000  0.0000  conv2_7_DW01_add_79
+c27/add_5791_I5_I2                   273.9420      0.0     273.9420      0.0000  0.0000  conv2_7_DW01_add_69
+c27/add_5791_I6_I1                   289.3320      0.0     289.3320      0.0000  0.0000  conv2_7_DW01_add_80
+c27/add_5791_I6_I2                   276.3360      0.0     276.3360      0.0000  0.0000  conv2_7_DW01_add_70
+c27/add_5791_I7_I1                   320.1120      0.0     320.1120      0.0000  0.0000  conv2_7_DW01_add_81
+c27/add_5791_I7_I2                   277.7040      0.0     277.7040      0.0000  0.0000  conv2_7_DW01_add_71
+c27/add_5791_I8_I1                   288.6480      0.0     288.6480      0.0000  0.0000  conv2_7_DW01_add_82
+c27/add_5791_I8_I2                   272.2320      0.0     272.2320      0.0000  0.0000  conv2_7_DW01_add_72
+c27/add_5791_I9_I1                   293.0940      0.0     293.0940      0.0000  0.0000  conv2_7_DW01_add_83
+c27/add_5791_I9_I2                   272.2320      0.0     272.2320      0.0000  0.0000  conv2_7_DW01_add_73
+c27/inpro16                        72080.9476      8.6     192.2040      0.0000  0.0000  innerproduct16_10
+c27/inpro16/add_0_root_add_6348_6    146.0340      0.0     146.0340      0.0000  0.0000  innerproduct16_10_DW01_add_299
+c27/inpro16/add_0_root_add_6349_6    146.7180      0.0     146.7180      0.0000  0.0000  innerproduct16_10_DW01_add_305
+c27/inpro16/add_0_root_add_6350_6    136.4580      0.0     136.4580      0.0000  0.0000  innerproduct16_10_DW01_add_311
+c27/inpro16/add_0_root_add_6351_6    142.2720      0.0     142.2720      0.0000  0.0000  innerproduct16_10_DW01_add_317
+c27/inpro16/add_0_root_add_6352_6    140.5620      0.0     140.5620      0.0000  0.0000  innerproduct16_10_DW01_add_323
+c27/inpro16/add_0_root_add_6353_6    155.6100      0.0     155.6100      0.0000  0.0000  innerproduct16_10_DW01_add_329
+c27/inpro16/add_0_root_add_6354_6    145.0080      0.0     145.0080      0.0000  0.0000  innerproduct16_10_DW01_add_335
+c27/inpro16/add_0_root_add_6355_6    144.3240      0.0     144.3240      0.0000  0.0000  innerproduct16_10_DW01_add_341
+c27/inpro16/add_0_root_add_6356_6    145.3500      0.0     145.3500      0.0000  0.0000  innerproduct16_10_DW01_add_347
+c27/inpro16/add_0_root_add_6357_5    138.1680      0.0     138.1680      0.0000  0.0000  innerproduct16_10_DW01_add_294
+c27/inpro16/add_0_root_add_6360_6    152.8740      0.0     152.8740      0.0000  0.0000  innerproduct16_10_DW01_add_231
+c27/inpro16/add_0_root_add_6361_6    134.0640      0.0     134.0640      0.0000  0.0000  innerproduct16_10_DW01_add_247
+c27/inpro16/add_0_root_add_6362_6    127.9080      0.0     127.9080      0.0000  0.0000  innerproduct16_10_DW01_add_253
+c27/inpro16/add_0_root_add_6363_6    134.0640      0.0     134.0640      0.0000  0.0000  innerproduct16_10_DW01_add_259
+c27/inpro16/add_0_root_add_6364_6    134.0640      0.0     134.0640      0.0000  0.0000  innerproduct16_10_DW01_add_265
+c27/inpro16/add_0_root_add_6365_6    131.6700      0.0     131.6700      0.0000  0.0000  innerproduct16_10_DW01_add_271
+c27/inpro16/add_0_root_add_6366_6    133.0380      0.0     133.0380      0.0000  0.0000  innerproduct16_10_DW01_add_277
+c27/inpro16/add_0_root_add_6367_6    140.9040      0.0     140.9040      0.0000  0.0000  innerproduct16_10_DW01_add_283
+c27/inpro16/add_0_root_add_6368_6    138.1680      0.0     138.1680      0.0000  0.0000  innerproduct16_10_DW01_add_289
+c27/inpro16/add_0_root_add_6369_5    152.8740      0.0     152.8740      0.0000  0.0000  innerproduct16_10_DW01_add_230
+c27/inpro16/add_1_root_add_6348_6    126.1980      0.0     126.1980      0.0000  0.0000  innerproduct16_10_DW01_add_298
+c27/inpro16/add_1_root_add_6349_6    129.6180      0.0     129.6180      0.0000  0.0000  innerproduct16_10_DW01_add_304
+c27/inpro16/add_1_root_add_6350_6    131.3280      0.0     131.3280      0.0000  0.0000  innerproduct16_10_DW01_add_310
+c27/inpro16/add_1_root_add_6351_6    125.5140      0.0     125.5140      0.0000  0.0000  innerproduct16_10_DW01_add_316
+c27/inpro16/add_1_root_add_6352_6    129.2760      0.0     129.2760      0.0000  0.0000  innerproduct16_10_DW01_add_322
+c27/inpro16/add_1_root_add_6353_6    127.9080      0.0     127.9080      0.0000  0.0000  innerproduct16_10_DW01_add_328
+c27/inpro16/add_1_root_add_6354_6    129.2760      0.0     129.2760      0.0000  0.0000  innerproduct16_10_DW01_add_334
+c27/inpro16/add_1_root_add_6355_6    129.2760      0.0     129.2760      0.0000  0.0000  innerproduct16_10_DW01_add_340
+c27/inpro16/add_1_root_add_6356_6    125.5140      0.0     125.5140      0.0000  0.0000  innerproduct16_10_DW01_add_346
+c27/inpro16/add_1_root_add_6357_5    125.1720      0.0     125.1720      0.0000  0.0000  innerproduct16_10_DW01_add_293
+c27/inpro16/add_1_root_add_6360_6    115.5960      0.0     115.5960      0.0000  0.0000  innerproduct16_10_DW01_add_241
+c27/inpro16/add_1_root_add_6361_6    119.3580      0.0     119.3580      0.0000  0.0000  innerproduct16_10_DW01_add_246
+c27/inpro16/add_1_root_add_6362_6    125.5140      0.0     125.5140      0.0000  0.0000  innerproduct16_10_DW01_add_252
+c27/inpro16/add_1_root_add_6363_6    121.7520      0.0     121.7520      0.0000  0.0000  innerproduct16_10_DW01_add_258
+c27/inpro16/add_1_root_add_6364_6    121.7520      0.0     121.7520      0.0000  0.0000  innerproduct16_10_DW01_add_264
+c27/inpro16/add_1_root_add_6365_6    119.3580      0.0     119.3580      0.0000  0.0000  innerproduct16_10_DW01_add_270
+c27/inpro16/add_1_root_add_6366_6    121.7520      0.0     121.7520      0.0000  0.0000  innerproduct16_10_DW01_add_276
+c27/inpro16/add_1_root_add_6367_6    119.3580      0.0     119.3580      0.0000  0.0000  innerproduct16_10_DW01_add_282
+c27/inpro16/add_1_root_add_6368_6    119.3580      0.0     119.3580      0.0000  0.0000  innerproduct16_10_DW01_add_288
+c27/inpro16/add_1_root_add_6369_5    118.6740      0.0     118.6740      0.0000  0.0000  innerproduct16_10_DW01_add_237
+c27/inpro16/add_2_root_add_6348_6    140.5620      0.0     140.5620      0.0000  0.0000  innerproduct16_10_DW01_add_295
+c27/inpro16/add_2_root_add_6349_6    132.3540      0.0     132.3540      0.0000  0.0000  innerproduct16_10_DW01_add_301
+c27/inpro16/add_2_root_add_6350_6    129.2760      0.0     129.2760      0.0000  0.0000  innerproduct16_10_DW01_add_307
+c27/inpro16/add_2_root_add_6351_6    128.5920      0.0     128.5920      0.0000  0.0000  innerproduct16_10_DW01_add_313
+c27/inpro16/add_2_root_add_6352_6    132.3540      0.0     132.3540      0.0000  0.0000  innerproduct16_10_DW01_add_319
+c27/inpro16/add_2_root_add_6353_6    146.7180      0.0     146.7180      0.0000  0.0000  innerproduct16_10_DW01_add_325
+c27/inpro16/add_2_root_add_6354_6    136.1160      0.0     136.1160      0.0000  0.0000  innerproduct16_10_DW01_add_331
+c27/inpro16/add_2_root_add_6355_6    141.2460      0.0     141.2460      0.0000  0.0000  innerproduct16_10_DW01_add_337
+c27/inpro16/add_2_root_add_6356_6    138.1680      0.0     138.1680      0.0000  0.0000  innerproduct16_10_DW01_add_343
+c27/inpro16/add_2_root_add_6357_5    140.5620      0.0     140.5620      0.0000  0.0000  innerproduct16_10_DW01_add_290
+c27/inpro16/add_2_root_add_6360_6    123.4620      0.0     123.4620      0.0000  0.0000  innerproduct16_10_DW01_add_238
+c27/inpro16/add_2_root_add_6361_6    127.9080      0.0     127.9080      0.0000  0.0000  innerproduct16_10_DW01_add_243
+c27/inpro16/add_2_root_add_6362_6    127.9080      0.0     127.9080      0.0000  0.0000  innerproduct16_10_DW01_add_249
+c27/inpro16/add_2_root_add_6363_6    127.9080      0.0     127.9080      0.0000  0.0000  innerproduct16_10_DW01_add_255
+c27/inpro16/add_2_root_add_6364_6    130.9860      0.0     130.9860      0.0000  0.0000  innerproduct16_10_DW01_add_261
+c27/inpro16/add_2_root_add_6365_6    125.1720      0.0     125.1720      0.0000  0.0000  innerproduct16_10_DW01_add_267
+c27/inpro16/add_2_root_add_6366_6    128.9340      0.0     128.9340      0.0000  0.0000  innerproduct16_10_DW01_add_273
+c27/inpro16/add_2_root_add_6367_6    125.5140      0.0     125.5140      0.0000  0.0000  innerproduct16_10_DW01_add_279
+c27/inpro16/add_2_root_add_6368_6    126.5400      0.0     126.5400      0.0000  0.0000  innerproduct16_10_DW01_add_285
+c27/inpro16/add_2_root_add_6369_5    119.3580      0.0     119.3580      0.0000  0.0000  innerproduct16_10_DW01_add_234
+c27/inpro16/add_3_root_add_6348_6    144.3240      0.0     144.3240      0.0000  0.0000  innerproduct16_10_DW01_add_297
+c27/inpro16/add_3_root_add_6349_6    138.1680      0.0     138.1680      0.0000  0.0000  innerproduct16_10_DW01_add_303
+c27/inpro16/add_3_root_add_6350_6    126.8820      0.0     126.8820      0.0000  0.0000  innerproduct16_10_DW01_add_309
+c27/inpro16/add_3_root_add_6351_6    144.6660      0.0     144.6660      0.0000  0.0000  innerproduct16_10_DW01_add_315
+c27/inpro16/add_3_root_add_6352_6    126.5400      0.0     126.5400      0.0000  0.0000  innerproduct16_10_DW01_add_321
+c27/inpro16/add_3_root_add_6353_6    126.8820      0.0     126.8820      0.0000  0.0000  innerproduct16_10_DW01_add_327
+c27/inpro16/add_3_root_add_6354_6    132.6960      0.0     132.6960      0.0000  0.0000  innerproduct16_10_DW01_add_333
+c27/inpro16/add_3_root_add_6355_6    126.5400      0.0     126.5400      0.0000  0.0000  innerproduct16_10_DW01_add_339
+c27/inpro16/add_3_root_add_6356_6    126.8820      0.0     126.8820      0.0000  0.0000  innerproduct16_10_DW01_add_345
+c27/inpro16/add_3_root_add_6357_5    137.8260      0.0     137.8260      0.0000  0.0000  innerproduct16_10_DW01_add_292
+c27/inpro16/add_3_root_add_6360_6    133.0380      0.0     133.0380      0.0000  0.0000  innerproduct16_10_DW01_add_240
+c27/inpro16/add_3_root_add_6361_6    132.6960      0.0     132.6960      0.0000  0.0000  innerproduct16_10_DW01_add_245
+c27/inpro16/add_3_root_add_6362_6    132.0120      0.0     132.0120      0.0000  0.0000  innerproduct16_10_DW01_add_251
+c27/inpro16/add_3_root_add_6363_6    138.5100      0.0     138.5100      0.0000  0.0000  innerproduct16_10_DW01_add_257
+c27/inpro16/add_3_root_add_6364_6    125.5140      0.0     125.5140      0.0000  0.0000  innerproduct16_10_DW01_add_263
+c27/inpro16/add_3_root_add_6365_6    135.4320      0.0     135.4320      0.0000  0.0000  innerproduct16_10_DW01_add_269
+c27/inpro16/add_3_root_add_6366_6    133.7220      0.0     133.7220      0.0000  0.0000  innerproduct16_10_DW01_add_275
+c27/inpro16/add_3_root_add_6367_6    135.4320      0.0     135.4320      0.0000  0.0000  innerproduct16_10_DW01_add_281
+c27/inpro16/add_3_root_add_6368_6    129.6180      0.0     129.6180      0.0000  0.0000  innerproduct16_10_DW01_add_287
+c27/inpro16/add_3_root_add_6369_5    144.3240      0.0     144.3240      0.0000  0.0000  innerproduct16_10_DW01_add_236
+c27/inpro16/add_4_root_add_6348_6    119.7000      0.0     119.7000      0.0000  0.0000  innerproduct16_10_DW01_add_296
+c27/inpro16/add_4_root_add_6349_6    139.5360      0.0     139.5360      0.0000  0.0000  innerproduct16_10_DW01_add_302
+c27/inpro16/add_4_root_add_6350_6    126.5400      0.0     126.5400      0.0000  0.0000  innerproduct16_10_DW01_add_308
+c27/inpro16/add_4_root_add_6351_6    124.4880      0.0     124.4880      0.0000  0.0000  innerproduct16_10_DW01_add_314
+c27/inpro16/add_4_root_add_6352_6    126.8820      0.0     126.8820      0.0000  0.0000  innerproduct16_10_DW01_add_320
+c27/inpro16/add_4_root_add_6353_6    126.5400      0.0     126.5400      0.0000  0.0000  innerproduct16_10_DW01_add_326
+c27/inpro16/add_4_root_add_6354_6    131.6700      0.0     131.6700      0.0000  0.0000  innerproduct16_10_DW01_add_332
+c27/inpro16/add_4_root_add_6355_6    125.5140      0.0     125.5140      0.0000  0.0000  innerproduct16_10_DW01_add_338
+c27/inpro16/add_4_root_add_6356_6    144.3240      0.0     144.3240      0.0000  0.0000  innerproduct16_10_DW01_add_344
+c27/inpro16/add_4_root_add_6357_5    123.4620      0.0     123.4620      0.0000  0.0000  innerproduct16_10_DW01_add_291
+c27/inpro16/add_4_root_add_6360_6    113.8860      0.0     113.8860      0.0000  0.0000  innerproduct16_10_DW01_add_239
+c27/inpro16/add_4_root_add_6361_6    133.7220      0.0     133.7220      0.0000  0.0000  innerproduct16_10_DW01_add_244
+c27/inpro16/add_4_root_add_6362_6    140.2200      0.0     140.2200      0.0000  0.0000  innerproduct16_10_DW01_add_250
+c27/inpro16/add_4_root_add_6363_6    135.4320      0.0     135.4320      0.0000  0.0000  innerproduct16_10_DW01_add_256
+c27/inpro16/add_4_root_add_6364_6    137.8260      0.0     137.8260      0.0000  0.0000  innerproduct16_10_DW01_add_262
+c27/inpro16/add_4_root_add_6365_6    133.7220      0.0     133.7220      0.0000  0.0000  innerproduct16_10_DW01_add_268
+c27/inpro16/add_4_root_add_6366_6    126.5400      0.0     126.5400      0.0000  0.0000  innerproduct16_10_DW01_add_274
+c27/inpro16/add_4_root_add_6367_6    140.5620      0.0     140.5620      0.0000  0.0000  innerproduct16_10_DW01_add_280
+c27/inpro16/add_4_root_add_6368_6    129.6180      0.0     129.6180      0.0000  0.0000  innerproduct16_10_DW01_add_286
+c27/inpro16/add_4_root_add_6369_5    116.2800      0.0     116.2800      0.0000  0.0000  innerproduct16_10_DW01_add_235
+c27/inpro16/add_5_root_add_6349_6    116.2800      0.0     116.2800      0.0000  0.0000  innerproduct16_10_DW01_add_300
+c27/inpro16/add_5_root_add_6350_6    119.7000      0.0     119.7000      0.0000  0.0000  innerproduct16_10_DW01_add_306
+c27/inpro16/add_5_root_add_6351_6    117.3060      0.0     117.3060      0.0000  0.0000  innerproduct16_10_DW01_add_312
+c27/inpro16/add_5_root_add_6352_6    119.7000      0.0     119.7000      0.0000  0.0000  innerproduct16_10_DW01_add_318
+c27/inpro16/add_5_root_add_6353_6    139.5360      0.0     139.5360      0.0000  0.0000  innerproduct16_10_DW01_add_324
+c27/inpro16/add_5_root_add_6354_6    122.4360      0.0     122.4360      0.0000  0.0000  innerproduct16_10_DW01_add_330
+c27/inpro16/add_5_root_add_6355_6    118.6740      0.0     118.6740      0.0000  0.0000  innerproduct16_10_DW01_add_336
+c27/inpro16/add_5_root_add_6356_6    116.2800      0.0     116.2800      0.0000  0.0000  innerproduct16_10_DW01_add_342
+c27/inpro16/add_5_root_add_6361_6    117.3060      0.0     117.3060      0.0000  0.0000  innerproduct16_10_DW01_add_242
+c27/inpro16/add_5_root_add_6362_6    127.9080      0.0     127.9080      0.0000  0.0000  innerproduct16_10_DW01_add_248
+c27/inpro16/add_5_root_add_6363_6    117.3060      0.0     117.3060      0.0000  0.0000  innerproduct16_10_DW01_add_254
+c27/inpro16/add_5_root_add_6364_6    117.3060      0.0     117.3060      0.0000  0.0000  innerproduct16_10_DW01_add_260
+c27/inpro16/add_5_root_add_6365_6    130.3020      0.0     130.3020      0.0000  0.0000  innerproduct16_10_DW01_add_266
+c27/inpro16/add_5_root_add_6366_6    113.5440      0.0     113.5440      0.0000  0.0000  innerproduct16_10_DW01_add_272
+c27/inpro16/add_5_root_add_6367_6    126.8820      0.0     126.8820      0.0000  0.0000  innerproduct16_10_DW01_add_278
+c27/inpro16/add_5_root_add_6368_6    121.0680      0.0     121.0680      0.0000  0.0000  innerproduct16_10_DW01_add_284
+c27/inpro16/mult_6348_2              425.7900      0.1     425.7900      0.0000  0.0000  innerproduct16_10_DW_mult_tc_348
+c27/inpro16/mult_6348_3              425.4480      0.1     425.4480      0.0000  0.0000  innerproduct16_10_DW_mult_tc_349
+c27/inpro16/mult_6348_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_350
+c27/inpro16/mult_6348_5              417.5820      0.0     417.5820      0.0000  0.0000  innerproduct16_10_DW_mult_tc_351
+c27/inpro16/mult_6348_6              419.9760      0.1     419.9760      0.0000  0.0000  innerproduct16_10_DW_mult_tc_249
+c27/inpro16/mult_6348_7              421.6860      0.1     421.6860      0.0000  0.0000  innerproduct16_10_DW_mult_tc_251
+c27/inpro16/mult_6349                422.3700      0.1     422.3700      0.0000  0.0000  innerproduct16_10_DW_mult_tc_353
+c27/inpro16/mult_6349_2              424.0800      0.1     424.0800      0.0000  0.0000  innerproduct16_10_DW_mult_tc_354
+c27/inpro16/mult_6349_3              418.2660      0.0     418.2660      0.0000  0.0000  innerproduct16_10_DW_mult_tc_355
+c27/inpro16/mult_6349_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_356
+c27/inpro16/mult_6349_5              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_357
+c27/inpro16/mult_6349_6              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_358
+c27/inpro16/mult_6349_7              421.3440      0.1     421.3440      0.0000  0.0000  innerproduct16_10_DW_mult_tc_256
+c27/inpro16/mult_6350                424.0800      0.1     424.0800      0.0000  0.0000  innerproduct16_10_DW_mult_tc_360
+c27/inpro16/mult_6350_2              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_361
+c27/inpro16/mult_6350_3              418.6080      0.0     418.6080      0.0000  0.0000  innerproduct16_10_DW_mult_tc_362
+c27/inpro16/mult_6350_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_363
+c27/inpro16/mult_6350_5              417.5820      0.0     417.5820      0.0000  0.0000  innerproduct16_10_DW_mult_tc_364
+c27/inpro16/mult_6350_6              417.5820      0.0     417.5820      0.0000  0.0000  innerproduct16_10_DW_mult_tc_365
+c27/inpro16/mult_6350_7              420.6600      0.1     420.6600      0.0000  0.0000  innerproduct16_10_DW_mult_tc_257
+c27/inpro16/mult_6351                417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_367
+c27/inpro16/mult_6351_2              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_368
+c27/inpro16/mult_6351_3              418.2660      0.0     418.2660      0.0000  0.0000  innerproduct16_10_DW_mult_tc_369
+c27/inpro16/mult_6351_4              417.9240      0.0     417.9240      0.0000  0.0000  innerproduct16_10_DW_mult_tc_370
+c27/inpro16/mult_6351_5              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_371
+c27/inpro16/mult_6351_6              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_372
+c27/inpro16/mult_6351_7              418.9500      0.1     418.9500      0.0000  0.0000  innerproduct16_10_DW_mult_tc_258
+c27/inpro16/mult_6352                417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_374
+c27/inpro16/mult_6352_2              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_375
+c27/inpro16/mult_6352_3              419.2920      0.1     419.2920      0.0000  0.0000  innerproduct16_10_DW_mult_tc_376
+c27/inpro16/mult_6352_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_377
+c27/inpro16/mult_6352_5              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_378
+c27/inpro16/mult_6352_6              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_379
+c27/inpro16/mult_6352_7              418.9500      0.1     418.9500      0.0000  0.0000  innerproduct16_10_DW_mult_tc_259
+c27/inpro16/mult_6353                421.0020      0.1     421.0020      0.0000  0.0000  innerproduct16_10_DW_mult_tc_144
+c27/inpro16/mult_6353_2              418.9500      0.1     418.9500      0.0000  0.0000  innerproduct16_10_DW_mult_tc_382
+c27/inpro16/mult_6353_3              418.2660      0.0     418.2660      0.0000  0.0000  innerproduct16_10_DW_mult_tc_383
+c27/inpro16/mult_6353_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_384
+c27/inpro16/mult_6353_5              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_385
+c27/inpro16/mult_6353_6              420.6600      0.1     420.6600      0.0000  0.0000  innerproduct16_10_DW_mult_tc_386
+c27/inpro16/mult_6353_7              419.9760      0.1     419.9760      0.0000  0.0000  innerproduct16_10_DW_mult_tc_252
+c27/inpro16/mult_6354                417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_388
+c27/inpro16/mult_6354_2              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_389
+c27/inpro16/mult_6354_3              418.2660      0.0     418.2660      0.0000  0.0000  innerproduct16_10_DW_mult_tc_390
+c27/inpro16/mult_6354_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_391
+c27/inpro16/mult_6354_5              420.6600      0.1     420.6600      0.0000  0.0000  innerproduct16_10_DW_mult_tc_392
+c27/inpro16/mult_6354_6              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_393
+c27/inpro16/mult_6354_7              418.2660      0.0     418.2660      0.0000  0.0000  innerproduct16_10_DW_mult_tc_253
+c27/inpro16/mult_6355                417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_395
+c27/inpro16/mult_6355_2              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_396
+c27/inpro16/mult_6355_3              418.6080      0.0     418.6080      0.0000  0.0000  innerproduct16_10_DW_mult_tc_397
+c27/inpro16/mult_6355_4              422.3700      0.1     422.3700      0.0000  0.0000  innerproduct16_10_DW_mult_tc_398
+c27/inpro16/mult_6355_5              418.9500      0.1     418.9500      0.0000  0.0000  innerproduct16_10_DW_mult_tc_399
+c27/inpro16/mult_6355_6              417.5820      0.0     417.5820      0.0000  0.0000  innerproduct16_10_DW_mult_tc_400
+c27/inpro16/mult_6355_7              417.5820      0.0     417.5820      0.0000  0.0000  innerproduct16_10_DW_mult_tc_254
+c27/inpro16/mult_6356                417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_402
+c27/inpro16/mult_6356_2              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_403
+c27/inpro16/mult_6356_3              420.6600      0.1     420.6600      0.0000  0.0000  innerproduct16_10_DW_mult_tc_404
+c27/inpro16/mult_6356_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_405
+c27/inpro16/mult_6356_5              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_406
+c27/inpro16/mult_6356_6              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_407
+c27/inpro16/mult_6356_7              418.2660      0.0     418.2660      0.0000  0.0000  innerproduct16_10_DW_mult_tc_255
+c27/inpro16/mult_6357                417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_342
+c27/inpro16/mult_6357_2              420.6600      0.1     420.6600      0.0000  0.0000  innerproduct16_10_DW_mult_tc_343
+c27/inpro16/mult_6357_3              418.6080      0.0     418.6080      0.0000  0.0000  innerproduct16_10_DW_mult_tc_344
+c27/inpro16/mult_6357_4              417.5820      0.0     417.5820      0.0000  0.0000  innerproduct16_10_DW_mult_tc_345
+c27/inpro16/mult_6357_5              418.2660      0.0     418.2660      0.0000  0.0000  innerproduct16_10_DW_mult_tc_248
+c27/inpro16/mult_6357_6              419.9760      0.1     419.9760      0.0000  0.0000  innerproduct16_10_DW_mult_tc_250
+c27/inpro16/mult_6360_2              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_280
+c27/inpro16/mult_6360_3              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_281
+c27/inpro16/mult_6360_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_282
+c27/inpro16/mult_6360_5              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_283
+c27/inpro16/mult_6360_6              384.0660      0.0     384.0660      0.0000  0.0000  innerproduct16_10_DW_mult_tc_273
+c27/inpro16/mult_6360_7              382.6980      0.0     382.6980      0.0000  0.0000  innerproduct16_10_DW_mult_tc_275
+c27/inpro16/mult_6361                417.5820      0.0     417.5820      0.0000  0.0000  innerproduct16_10_DW_mult_tc_285
+c27/inpro16/mult_6361_2              422.3700      0.1     422.3700      0.0000  0.0000  innerproduct16_10_DW_mult_tc_286
+c27/inpro16/mult_6361_3              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_287
+c27/inpro16/mult_6361_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_288
+c27/inpro16/mult_6361_5              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_289
+c27/inpro16/mult_6361_6              418.6080      0.0     418.6080      0.0000  0.0000  innerproduct16_10_DW_mult_tc_290
+c27/inpro16/mult_6361_7              411.7680      0.0     411.7680      0.0000  0.0000  innerproduct16_10_DW_mult_tc_284
+c27/inpro16/mult_6362                424.0800      0.1     424.0800      0.0000  0.0000  innerproduct16_10_DW_mult_tc_292
+c27/inpro16/mult_6362_2              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_293
+c27/inpro16/mult_6362_3              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_294
+c27/inpro16/mult_6362_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_295
+c27/inpro16/mult_6362_5              420.3180      0.1     420.3180      0.0000  0.0000  innerproduct16_10_DW_mult_tc_296
+c27/inpro16/mult_6362_6              420.3180      0.1     420.3180      0.0000  0.0000  innerproduct16_10_DW_mult_tc_297
+c27/inpro16/mult_6362_7              420.6600      0.1     420.6600      0.0000  0.0000  innerproduct16_10_DW_mult_tc_270
+c27/inpro16/mult_6363                417.5820      0.0     417.5820      0.0000  0.0000  innerproduct16_10_DW_mult_tc_299
+c27/inpro16/mult_6363_2              417.5820      0.0     417.5820      0.0000  0.0000  innerproduct16_10_DW_mult_tc_300
+c27/inpro16/mult_6363_3              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_301
+c27/inpro16/mult_6363_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_302
+c27/inpro16/mult_6363_5              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_303
+c27/inpro16/mult_6363_6              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_304
+c27/inpro16/mult_6363_7              411.7680      0.0     411.7680      0.0000  0.0000  innerproduct16_10_DW_mult_tc_298
+c27/inpro16/mult_6364                417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_306
+c27/inpro16/mult_6364_2              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_307
+c27/inpro16/mult_6364_3              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_308
+c27/inpro16/mult_6364_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_309
+c27/inpro16/mult_6364_5              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_310
+c27/inpro16/mult_6364_6              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_311
+c27/inpro16/mult_6364_7              415.1880      0.0     415.1880      0.0000  0.0000  innerproduct16_10_DW_mult_tc_305
+c27/inpro16/mult_6365                417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_313
+c27/inpro16/mult_6365_2              417.9240      0.0     417.9240      0.0000  0.0000  innerproduct16_10_DW_mult_tc_314
+c27/inpro16/mult_6365_3              419.2920      0.1     419.2920      0.0000  0.0000  innerproduct16_10_DW_mult_tc_315
+c27/inpro16/mult_6365_4              419.2920      0.1     419.2920      0.0000  0.0000  innerproduct16_10_DW_mult_tc_316
+c27/inpro16/mult_6365_5              417.9240      0.0     417.9240      0.0000  0.0000  innerproduct16_10_DW_mult_tc_317
+c27/inpro16/mult_6365_6              420.6600      0.1     420.6600      0.0000  0.0000  innerproduct16_10_DW_mult_tc_318
+c27/inpro16/mult_6365_7              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_261
+c27/inpro16/mult_6366                419.9760      0.1     419.9760      0.0000  0.0000  innerproduct16_10_DW_mult_tc_320
+c27/inpro16/mult_6366_2              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_321
+c27/inpro16/mult_6366_3              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_322
+c27/inpro16/mult_6366_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_323
+c27/inpro16/mult_6366_5              420.6600      0.1     420.6600      0.0000  0.0000  innerproduct16_10_DW_mult_tc_324
+c27/inpro16/mult_6366_6              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_325
+c27/inpro16/mult_6366_7              408.3480      0.0     408.3480      0.0000  0.0000  innerproduct16_10_DW_mult_tc_319
+c27/inpro16/mult_6367                418.9500      0.1     418.9500      0.0000  0.0000  innerproduct16_10_DW_mult_tc_327
+c27/inpro16/mult_6367_2              418.9500      0.1     418.9500      0.0000  0.0000  innerproduct16_10_DW_mult_tc_328
+c27/inpro16/mult_6367_3              418.6080      0.0     418.6080      0.0000  0.0000  innerproduct16_10_DW_mult_tc_329
+c27/inpro16/mult_6367_4              420.6600      0.1     420.6600      0.0000  0.0000  innerproduct16_10_DW_mult_tc_330
+c27/inpro16/mult_6367_5              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_331
+c27/inpro16/mult_6367_6              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_332
+c27/inpro16/mult_6367_7              418.9500      0.1     418.9500      0.0000  0.0000  innerproduct16_10_DW_mult_tc_264
+c27/inpro16/mult_6368                418.6080      0.0     418.6080      0.0000  0.0000  innerproduct16_10_DW_mult_tc_334
+c27/inpro16/mult_6368_2              418.9500      0.1     418.9500      0.0000  0.0000  innerproduct16_10_DW_mult_tc_335
+c27/inpro16/mult_6368_3              420.6600      0.1     420.6600      0.0000  0.0000  innerproduct16_10_DW_mult_tc_336
+c27/inpro16/mult_6368_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_337
+c27/inpro16/mult_6368_5              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_338
+c27/inpro16/mult_6368_6              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_339
+c27/inpro16/mult_6368_7              418.9500      0.1     418.9500      0.0000  0.0000  innerproduct16_10_DW_mult_tc_266
+c27/inpro16/mult_6369                417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_276
+c27/inpro16/mult_6369_2              420.6600      0.1     420.6600      0.0000  0.0000  innerproduct16_10_DW_mult_tc_277
+c27/inpro16/mult_6369_3              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_278
+c27/inpro16/mult_6369_4              417.2400      0.0     417.2400      0.0000  0.0000  innerproduct16_10_DW_mult_tc_279
+c27/inpro16/mult_6369_5              382.6980      0.0     382.6980      0.0000  0.0000  innerproduct16_10_DW_mult_tc_272
+c27/inpro16/mult_6369_6              382.6980      0.0     382.6980      0.0000  0.0000  innerproduct16_10_DW_mult_tc_274
+c27/r1054                             25.9920      0.0      25.9920      0.0000  0.0000  conv2_7_DW01_inc_3_DW01_inc_23
+c27/r1055                             25.3080      0.0      25.3080      0.0000  0.0000  conv2_7_DW01_inc_2_DW01_inc_22
+c27/r1096                             38.3040      0.0      38.3040      0.0000  0.0000  conv2_7_DW_mult_uns_5_DW_mult_uns_35
+c27/r1098                             27.0180      0.0      27.0180      0.0000  0.0000  conv2_7_DW01_inc_4_DW01_inc_42
+c27/r1099                             43.4340      0.0      43.4340      0.0000  0.0000  conv2_7_DW_mult_uns_4_DW_mult_uns_34
+c27/rq8                            43061.2210      5.1     738.3780      0.0000  0.0000  reluQuan8_0
+c27/rq8/mult_2157                   5286.6361      0.6    5286.6361      0.0000  0.0000  reluQuan8_0_DW_mult_tc_8
+c27/rq8/mult_2158                   5283.5581      0.6    5283.5581      0.0000  0.0000  reluQuan8_0_DW_mult_tc_9
+c27/rq8/mult_2159                   5288.6881      0.6    5288.6881      0.0000  0.0000  reluQuan8_0_DW_mult_tc_12
+c27/rq8/mult_2160                   5286.2941      0.6    5286.2941      0.0000  0.0000  reluQuan8_0_DW_mult_tc_13
+c27/rq8/mult_2161                   5290.3981      0.6    5290.3981      0.0000  0.0000  reluQuan8_0_DW_mult_tc_10
+c27/rq8/mult_2162                   5293.4761      0.6    5293.4761      0.0000  0.0000  reluQuan8_0_DW_mult_tc_11
+c27/rq8/mult_2163                   5302.0261      0.6    5302.0261      0.0000  0.0000  reluQuan8_0_DW_mult_tc_14
+c27/rq8/mult_2164                   5291.7661      0.6    5291.7661      0.0000  0.0000  reluQuan8_0_DW_mult_tc_15
+c3                                 11866.7163      1.4     885.7800    582.0840  0.0000  conv3
+c3/add_0_root_r551                    69.4260      0.0      69.4260      0.0000  0.0000  conv3_DW01_add_7_DW01_add_336
+c3/add_0_root_r553                    69.4260      0.0      69.4260      0.0000  0.0000  conv3_DW01_add_9_DW01_add_338
+c3/add_1_root_r551                    79.6860      0.0      79.6860      0.0000  0.0000  conv3_DW01_add_8_DW01_add_337
+c3/add_1_root_r553                    78.3180      0.0      78.3180      0.0000  0.0000  conv3_DW01_add_10_DW01_add_339
+c3/add_6476                           25.9920      0.0      25.9920      0.0000  0.0000  conv3_DW01_inc_0_DW01_inc_17
+c3/add_6610                          263.6820      0.0     263.6820      0.0000  0.0000  conv3_DW01_add_12
+c3/inpro8                           4289.3641      0.5       1.0260      0.0000  0.0000  innerproduct8_3
+c3/inpro8/add_0_root_add_7005_7      141.2460      0.0     141.2460      0.0000  0.0000  innerproduct8_3_DW01_add_20
+c3/inpro8/add_1_root_add_7005_7      134.4060      0.0     134.4060      0.0000  0.0000  innerproduct8_3_DW01_add_19
+c3/inpro8/add_2_root_add_7005_7      134.4060      0.0     134.4060      0.0000  0.0000  innerproduct8_3_DW01_add_16
+c3/inpro8/add_3_root_add_7005_7      135.4320      0.0     135.4320      0.0000  0.0000  innerproduct8_3_DW01_add_18
+c3/inpro8/add_4_root_add_7005_7      135.4320      0.0     135.4320      0.0000  0.0000  innerproduct8_3_DW01_add_17
+c3/inpro8/add_5_root_add_7005_7      135.4320      0.0     135.4320      0.0000  0.0000  innerproduct8_3_DW01_add_15
+c3/inpro8/add_6_root_add_7005_7      125.8560      0.0     125.8560      0.0000  0.0000  innerproduct8_3_DW01_add_14
+c3/inpro8/mult_6996                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_3_DW_mult_tc_8
+c3/inpro8/mult_6997                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_3_DW_mult_tc_9
+c3/inpro8/mult_6998                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_3_DW_mult_tc_10
+c3/inpro8/mult_6999                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_3_DW_mult_tc_11
+c3/inpro8/mult_7000                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_3_DW_mult_tc_12
+c3/inpro8/mult_7001                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_3_DW_mult_tc_13
+c3/inpro8/mult_7002                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_3_DW_mult_tc_14
+c3/inpro8/mult_7003                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_3_DW_mult_tc_15
+c3/r554                               78.6600      0.0      78.6600      0.0000  0.0000  conv3_DW01_add_4_DW01_add_44
+c3/r555                               78.3180      0.0      78.3180      0.0000  0.0000  conv3_DW01_add_3_DW01_add_43
+c3/rq                               5365.9801      0.6      91.6560      0.0000  0.0000  reluQuan1_1
+c3/rq/mult_7019                     5274.3241      0.6    5274.3241      0.0000  0.0000  reluQuan1_1_DW_mult_tc_1
+f6                                 12066.7863      1.4     955.2060    715.4640  0.0000  fc6
+f6/add_0_root_r558                    76.9500      0.0      76.9500      0.0000  0.0000  fc6_DW01_add_7_DW01_add_332
+f6/add_0_root_r560                    76.9500      0.0      76.9500      0.0000  0.0000  fc6_DW01_add_9_DW01_add_334
+f6/add_1_root_r558                    79.6860      0.0      79.6860      0.0000  0.0000  fc6_DW01_add_8_DW01_add_333
+f6/add_1_root_r560                    78.3180      0.0      78.3180      0.0000  0.0000  fc6_DW01_add_10_DW01_add_335
+f6/add_7154                           56.0880      0.0      56.0880      0.0000  0.0000  fc6_DW01_inc_1_DW01_inc_16
+f6/add_7268                          265.3920      0.0     265.3920      0.0000  0.0000  fc6_DW01_add_12
+f6/add_7295                           25.9920      0.0      25.9920      0.0000  0.0000  fc6_DW01_inc_0_DW01_inc_15
+f6/inpro8                           4292.1001      0.5       1.0260      0.0000  0.0000  innerproduct8_1
+f6/inpro8/add_0_root_add_7005_7      141.2460      0.0     141.2460      0.0000  0.0000  innerproduct8_1_DW01_add_20
+f6/inpro8/add_1_root_add_7005_7      134.4060      0.0     134.4060      0.0000  0.0000  innerproduct8_1_DW01_add_19
+f6/inpro8/add_2_root_add_7005_7      133.7220      0.0     133.7220      0.0000  0.0000  innerproduct8_1_DW01_add_16
+f6/inpro8/add_3_root_add_7005_7      135.4320      0.0     135.4320      0.0000  0.0000  innerproduct8_1_DW01_add_18
+f6/inpro8/add_4_root_add_7005_7      135.4320      0.0     135.4320      0.0000  0.0000  innerproduct8_1_DW01_add_17
+f6/inpro8/add_5_root_add_7005_7      138.8520      0.0     138.8520      0.0000  0.0000  innerproduct8_1_DW01_add_15
+f6/inpro8/add_6_root_add_7005_7      125.8560      0.0     125.8560      0.0000  0.0000  innerproduct8_1_DW01_add_14
+f6/inpro8/mult_6996                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_1_DW_mult_tc_8
+f6/inpro8/mult_6997                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_1_DW_mult_tc_9
+f6/inpro8/mult_6998                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_1_DW_mult_tc_10
+f6/inpro8/mult_6999                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_1_DW_mult_tc_11
+f6/inpro8/mult_7000                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_1_DW_mult_tc_12
+f6/inpro8/mult_7001                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_1_DW_mult_tc_13
+f6/inpro8/mult_7002                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_1_DW_mult_tc_14
+f6/inpro8/mult_7003                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_1_DW_mult_tc_15
+f6/r556                               77.9760      0.0      77.9760      0.0000  0.0000  fc6_DW_mult_uns_0_DW_mult_uns_1
+f6/rq                               5366.6641      0.6      91.6560      0.0000  0.0000  reluQuan1_0
+f6/rq/mult_7019                     5275.0081      0.6    5275.0081      0.0000  0.0000  reluQuan1_0_DW_mult_tc_1
+f7                                 11829.4383      1.4    3262.6801   3373.8301  0.0000  fc7
+f7/add_0_root_r667                    82.0800      0.0      82.0800      0.0000  0.0000  fc7_DW01_add_13_DW01_add_328
+f7/add_0_root_r669                    82.0800      0.0      82.0800      0.0000  0.0000  fc7_DW01_add_15_DW01_add_330
+f7/add_1_root_r667                    79.6860      0.0      79.6860      0.0000  0.0000  fc7_DW01_add_14_DW01_add_329
+f7/add_1_root_r669                    78.3180      0.0      78.3180      0.0000  0.0000  fc7_DW01_add_16_DW01_add_331
+f7/add_7735                           56.0880      0.0      56.0880      0.0000  0.0000  fc7_DW01_inc_1_DW01_inc_14
+f7/add_7779                           56.0880      0.0      56.0880      0.0000  0.0000  fc7_DW01_inc_0_DW01_inc_13
+f7/add_7851_aco                      265.3920      0.0     265.3920      0.0000  0.0000  fc7_DW01_add_18
+f7/inpro8                           4323.2221      0.5       1.0260      0.0000  0.0000  innerproduct8_0
+f7/inpro8/add_0_root_add_7005_7      166.8960      0.0     166.8960      0.0000  0.0000  innerproduct8_0_DW01_add_11
+f7/inpro8/add_1_root_add_7005_7      134.7480      0.0     134.7480      0.0000  0.0000  innerproduct8_0_DW01_add_20
+f7/inpro8/add_2_root_add_7005_7      134.4060      0.0     134.4060      0.0000  0.0000  innerproduct8_0_DW01_add_17
+f7/inpro8/add_3_root_add_7005_7      139.5360      0.0     139.5360      0.0000  0.0000  innerproduct8_0_DW01_add_19
+f7/inpro8/add_4_root_add_7005_7      143.2980      0.0     143.2980      0.0000  0.0000  innerproduct8_0_DW01_add_18
+f7/inpro8/add_5_root_add_7005_7      135.4320      0.0     135.4320      0.0000  0.0000  innerproduct8_0_DW01_add_15
+f7/inpro8/add_6_root_add_7005_7      125.8560      0.0     125.8560      0.0000  0.0000  innerproduct8_0_DW01_add_16
+f7/inpro8/mult_6996                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_0_DW_mult_tc_12
+f7/inpro8/mult_6997                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_0_DW_mult_tc_13
+f7/inpro8/mult_6998                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_0_DW_mult_tc_14
+f7/inpro8/mult_6999                  418.2660      0.0     418.2660      0.0000  0.0000  innerproduct8_0_DW_mult_tc_15
+f7/inpro8/mult_7000                  417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_0_DW_mult_tc_21
+f7/inpro8/mult_7001                  417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_0_DW_mult_tc_22
+f7/inpro8/mult_7002                  417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_0_DW_mult_tc_23
+f7/inpro8/mult_7003                  417.2400      0.0     417.2400      0.0000  0.0000  innerproduct8_0_DW_mult_tc_24
+f7/mult_add_7851_aco                  39.3300      0.0      39.3300      0.0000  0.0000  fc7_DW_mult_uns_3
+f7/r665                              130.6440      0.0     130.6440      0.0000  0.0000  fc7_DW_mult_uns_0
+m1                                  3953.1781      0.5    1252.7460   1352.9520  0.0000  max1
+m1/add_0_root_add_0_root_add_8550_3
+                                      76.9500      0.0      76.9500      0.0000  0.0000  max1_DW01_add_11_DW01_add_825
+m1/add_0_root_add_0_root_add_8551_3
+                                      77.6340      0.0      77.6340      0.0000  0.0000  max1_DW01_add_13_DW01_add_827
+m1/add_0_root_add_1_root_add_8535_3
+                                      77.6340      0.0      77.6340      0.0000  0.0000  max1_DW01_add_5_DW01_add_356
+m1/add_0_root_add_8534_2              76.9500      0.0      76.9500      0.0000  0.0000  max1_DW01_add_0_DW01_add_231
+m1/add_0_root_r647                    82.0800      0.0      82.0800      0.0000  0.0000  max1_DW01_add_7_DW01_add_358
+m1/add_0_root_r651                    82.0800      0.0      82.0800      0.0000  0.0000  max1_DW01_add_9_DW01_add_360
+m1/add_1_root_add_1_root_add_8535_3
+                                      64.2960      0.0      64.2960      0.0000  0.0000  max1_DW01_add_6_DW01_add_357
+m1/add_1_root_r647                    71.8200      0.0      71.8200      0.0000  0.0000  max1_DW01_add_8_DW01_add_359
+m1/add_1_root_r651                    71.8200      0.0      71.8200      0.0000  0.0000  max1_DW01_add_10_DW01_add_361
+m1/add_8261                           56.0880      0.0      56.0880      0.0000  0.0000  max1_DW01_inc_1_DW01_inc_29
+m1/add_8355                           25.9920      0.0      25.9920      0.0000  0.0000  max1_DW01_inc_0_DW01_inc_28
+m1/mp82                              295.4880      0.0     295.4880      0.0000  0.0000  maxpool8_2_1
+m1/r645                               84.1320      0.0      84.1320      0.0000  0.0000  max1_DW_mult_uns_2_DW_mult_uns_26
+m1/r648                               56.0880      0.0      56.0880      0.0000  0.0000  max1_DW01_inc_2_DW01_inc_39
+m1/r649                               84.1320      0.0      84.1320      0.0000  0.0000  max1_DW_mult_uns_3_DW_mult_uns_27
+m1/r653                               64.2960      0.0      64.2960      0.0000  0.0000  max1_DW01_add_3_DW01_add_234
+m2                                  2907.3421      0.3    1020.8700    786.6000  0.0000  max2
+m2/add_0_root_add_0_root_add_9008_4
+                                      78.6600      0.0      78.6600      0.0000  0.0000  max2_DW01_add_8_DW01_add_384
+m2/add_0_root_add_1_root_add_9009_5
+                                      78.6600      0.0      78.6600      0.0000  0.0000  max2_DW01_add_7_DW01_add_383
+m2/add_0_root_r595                    82.0800      0.0      82.0800      0.0000  0.0000  max2_DW01_add_3_DW01_add_340
+m2/add_0_root_r599                    82.0800      0.0      82.0800      0.0000  0.0000  max2_DW01_add_5_DW01_add_342
+m2/add_1_root_r595                    73.5300      0.0      73.5300      0.0000  0.0000  max2_DW01_add_4_DW01_add_341
+m2/add_1_root_r599                    73.5300      0.0      73.5300      0.0000  0.0000  max2_DW01_add_6_DW01_add_343
+m2/add_8756                           56.0880      0.0      56.0880      0.0000  0.0000  max2_DW01_inc_1_DW01_inc_19
+m2/add_8850                           25.9920      0.0      25.9920      0.0000  0.0000  max2_DW01_inc_0_DW01_inc_18
+m2/mp82                              295.4880      0.0     295.4880      0.0000  0.0000  maxpool8_2_0
+m2/r3578                              47.1960      0.0      47.1960      0.0000  0.0000  max2_DW_mult_uns_3_DW_mult_uns_31
+m2/r593                               75.2400      0.0      75.2400      0.0000  0.0000  max2_DW_mult_uns_1_DW_mult_uns_22
+m2/r596                               56.0880      0.0      56.0880      0.0000  0.0000  max2_DW01_inc_2_DW01_inc_37
+m2/r597                               75.2400      0.0      75.2400      0.0000  0.0000  max2_DW_mult_uns_2_DW_mult_uns_23
+--------------------------------  -----------  -------  -----------  ----------  ------  --------------------------------------------
+Total                                                   768689.1522  68893.1655  0.0000
+
+1

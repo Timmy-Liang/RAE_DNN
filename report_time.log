@@ -1,0 +1,96 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RAE
+Version: R-2020.09
+Date   : Wed Jun 21 01:00:20 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_1P08V_125C   Library: slow_vdd1v2
+Wire Load Model Mode: top
+
+  Startpoint: c15/state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sram_act_wdata1_reg[16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  c15/state_reg[3]/CK (DFFTRXL)                         0.0000 #   0.0000 r
+  c15/state_reg[3]/QN (DFFTRXL)                         0.1233     0.1233 r
+  c15/U34/Y (NAND2X1)                                   0.0341     0.1574 f
+  c15/U40/Y (INVXL)                                     0.0339     0.1913 r
+  c15/U608/Y (NAND3BX1)                                 0.0625     0.2538 f
+  c15/U115/Y (BUFX2)                                    0.0596     0.3134 f
+  c15/U24/Y (BUFX2)                                     0.0656     0.3790 f
+  c15/U15/Y (INVX2)                                     0.0576     0.4366 r
+  c15/U20/Y (AND2X1)                                    0.1731     0.6097 r
+  c15/rq8/in1_2[31] (reluQuan8_3)                       0.0000     0.6097 r
+  c15/rq8/U15/Y (NOR2BXL)                               0.1104     0.7201 f
+  c15/rq8/mult_2163/a[27] (reluQuan8_3_DW_mult_tc_14)   0.0000     0.7201 f
+  c15/rq8/mult_2163/U2233/Y (BUFX2)                     0.0572     0.7773 f
+  c15/rq8/mult_2163/U2024/Y (XNOR2X1)                   0.0876     0.8649 r
+  c15/rq8/mult_2163/U2970/Y (OAI22X1)                   0.0585     0.9234 f
+  c15/rq8/mult_2163/U2967/S (ADDFX1)                    0.1789     1.1023 r
+  c15/rq8/mult_2163/U2743/S (ADDFX1)                    0.1407     1.2430 r
+  c15/rq8/mult_2163/U2632/CO (ADDFX1)                   0.0984     1.3414 r
+  c15/rq8/mult_2163/U2633/CO (ADDFX1)                   0.0979     1.4393 r
+  c15/rq8/mult_2163/U2557/S (ADDFX1)                    0.1473     1.5866 f
+  c15/rq8/mult_2163/U2556/S (ADDFX1)                    0.1605     1.7471 r
+  c15/rq8/mult_2163/U2488/Y (NOR2X1)                    0.0278     1.7749 f
+  c15/rq8/mult_2163/U2440/Y (OAI21X1)                   0.0425     1.8174 r
+  c15/rq8/mult_2163/U2438/Y (AOI21X1)                   0.0566     1.8740 f
+  c15/rq8/mult_2163/U2421/Y (OAI21X1)                   0.0477     1.9217 r
+  c15/rq8/mult_2163/U2419/Y (AOI21X1)                   0.0307     1.9524 f
+  c15/rq8/mult_2163/U2469/Y (OAI21X1)                   0.0539     2.0063 r
+  c15/rq8/mult_2163/U2467/Y (AOI21X1)                   0.0635     2.0698 f
+  c15/rq8/mult_2163/U2473/Y (OAI21X1)                   0.0574     2.1272 r
+  c15/rq8/mult_2163/U2465/Y (AOI21X1)                   0.0639     2.1911 f
+  c15/rq8/mult_2163/U2550/Y (OAI21X1)                   0.0574     2.2486 r
+  c15/rq8/mult_2163/U2548/Y (AOI21X1)                   0.0639     2.3125 f
+  c15/rq8/mult_2163/U2551/Y (OAI21X1)                   0.0545     2.3671 r
+  c15/rq8/mult_2163/U2267/Y (OAI2BB1X1)                 0.0776     2.4447 r
+  c15/rq8/mult_2163/U2623/CO (ADDFX1)                   0.0969     2.5416 r
+  c15/rq8/mult_2163/U2622/CO (ADDFX1)                   0.0979     2.6396 r
+  c15/rq8/mult_2163/U2728/CO (ADDFX1)                   0.0979     2.7375 r
+  c15/rq8/mult_2163/U2727/CO (ADDFX1)                   0.0979     2.8354 r
+  c15/rq8/mult_2163/U2726/CO (ADDFX1)                   0.0979     2.9333 r
+  c15/rq8/mult_2163/U2724/CO (ADDFX1)                   0.0979     3.0313 r
+  c15/rq8/mult_2163/U2731/S (ADDFX1)                    0.1442     3.1755 f
+  c15/rq8/mult_2163/product[62] (reluQuan8_3_DW_mult_tc_14)
+                                                        0.0000     3.1755 f
+  c15/rq8/U77/Y (OR4X1)                                 0.1573     3.3328 f
+  c15/rq8/U69/Y (OR4X1)                                 0.1176     3.4504 f
+  c15/rq8/U58/Y (OR4X1)                                 0.1588     3.6092 f
+  c15/rq8/U30/Y (INVX1)                                 0.0412     3.6504 r
+  c15/rq8/U227/Y (NAND2BX1)                             0.0404     3.6908 f
+  c15/rq8/out1[16] (reluQuan8_3)                        0.0000     3.6908 f
+  c15/U1322/Y (NOR2BX1)                                 0.0425     3.7333 f
+  c15/act_wdata1[16] (conv1_5)                          0.0000     3.7333 f
+  U2234/Y (AO22XL)                                      0.0732     3.8065 f
+  U1697/Y (OR4X1)                                       0.1513     3.9578 f
+  sram_act_wdata1_reg[16]/RN (DFFTRXL)                  0.0000     3.9578 f
+  data arrival time                                                3.9578
+
+  clock clk (rise edge)                                 4.0000     4.0000
+  clock network delay (ideal)                           0.0000     4.0000
+  sram_act_wdata1_reg[16]/CK (DFFTRXL)                  0.0000     4.0000 r
+  library setup time                                   -0.0421     3.9579
+  data required time                                               3.9579
+  --------------------------------------------------------------------------
+  data required time                                               3.9579
+  data arrival time                                               -3.9578
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+
+1
